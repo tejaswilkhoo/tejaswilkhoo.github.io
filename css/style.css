@@ -1,0 +1,221 @@
+body {
+  overflow-x: hidden;
+  background-color: black;
+  color: white !important;
+  font-family: 'Work Sans';
+  margin: 0px 0px 0px 0px !important;
+}
+
+.navbar {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#00000000));
+  background-image: linear-gradient(180deg, #000000, #00000000);
+  margin: 0em 4em 0em 4em;
+}
+
+section {
+  margin: 0em 8em 0em 8em;
+}
+
+#tejas-logo {
+  width: 4em !important;
+  height: auto !important;
+}
+
+.nav-link {
+  color: white !important;
+  margin: 0em 1em 0em 1em;
+  font-size: 0.9em;
+}
+
+.gold-nav {
+  color: #d0a100 !important;
+}
+
+.center-arrow {
+  z-index: -5;
+  position: relative;
+  margin: auto;
+  margin-top: -10em;
+  margin-right: -9em;
+  width: 0;
+  height: 0;
+  border-bottom: 688px solid #d0a100;
+  border-left: 400px solid transparent;
+  border-right: 400px solid transparent;
+  -webkit-transform-origin: 50% 65%;
+          transform-origin: 50% 65%;
+  -webkit-animation: rotate-right 240s linear infinite;
+          animation: rotate-right 240s linear infinite;
+}
+
+.center-arrow-gold {
+  z-index: -5;
+  position: relative;
+  top: 8.5px;
+  left: -392px;
+  border-bottom: 674.24px solid black;
+  border-left: 392px solid transparent;
+  border-right: 392px solid transparent;
+}
+
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.center-arrow-2 {
+  z-index: -5;
+  position: relative;
+  margin: auto;
+  margin-top: -35em;
+  margin-bottom: -33em;
+  margin-right: -0em;
+  width: 0;
+  height: 0;
+  border-bottom: 516px solid white;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  -webkit-transform-origin: 50% 65%;
+          transform-origin: 50% 65%;
+  -webkit-animation: rotate-right-2 200s linear infinite;
+          animation: rotate-right-2 200s linear infinite;
+}
+
+.center-arrow-gold-2 {
+  z-index: -5;
+  position: relative;
+  top: 6.5px;
+  left: -294px;
+  border-bottom: 505.68px solid black;
+  border-left: 294px solid transparent;
+  border-right: 294px solid transparent;
+}
+
+@-webkit-keyframes rotate-right-2 {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(365deg);
+            transform: rotate(365deg);
+  }
+}
+
+@keyframes rotate-right-2 {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(365deg);
+            transform: rotate(365deg);
+  }
+}
+
+#tejas {
+  color: #000000;
+  font-family: "ragastaitalic";
+  font-size: 8em;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+  margin-top: 2em;
+}
+
+#wilkhoo {
+  background-image: -webkit-gradient(linear, left top, right top, from(#977807), to(#d0a100));
+  background-image: linear-gradient(90deg, #977807, #d0a100);
+  -webkit-background-clip: text;
+  -ms-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  color: transparent;
+  font-family: "helonik";
+  color: #d0a100;
+  font-size: 12em;
+  margin-top: -0.5em;
+  margin-left: 0.5em;
+  margin-bottom: -0.125em;
+}
+
+#tagline {
+  font-family: "ragastaregular";
+  font-size: 4em;
+  margin-bottom: 20.2em;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+#footer {
+  background-color: black;
+  text-align: center;
+  padding: 3em 0em 2.5em 0em;
+}
+
+#flowers {
+  text-decoration: none;
+  color: #d0a100;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+#flowers:hover {
+  letter-spacing: 0.03em;
+}
+
+@media only screen and (max-width: 1272px) {
+  #tejas {
+    margin-top: calc(450px - 16vw);
+    font-size: 10vw;
+  }
+  #wilkhoo {
+    font-size: 14vw;
+  }
+  #tagline {
+    font-size: 5vw;
+  }
+  .nav-link {
+    margin: 0em 0.6em 0em 0.6em;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar {
+    margin: 0em 2em 0em 2em;
+  }
+  section {
+    margin: 0em 1em 0em 1em;
+  }
+  #tejas {
+    margin-top: calc(400px - 16vw);
+    margin-left: 0.3em;
+    font-size: Max(10vw, 3.4em);
+  }
+  #wilkhoo {
+    margin-left: 0.3em;
+    font-size: Max(14vw, 4.8em);
+  }
+  #tagline {
+    margin-left: 6vw;
+    font-size: Max(5vw, 2em);
+  }
+}
+/*# sourceMappingURL=style.css.map */

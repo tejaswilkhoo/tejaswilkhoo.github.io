@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'ragastaitalic';
+    src: url('fonts/Ragasta-Italic.eot');
+    src: url('fonts/Ragasta-Italic.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Ragasta-Italic.woff2') format('woff2'),
+         url('fonts/Ragasta-Italic.woff') format('woff'),
+         url('fonts/Ragasta-Italic.ttf')  format('truetype'),
+         url('fonts/Ragasta-Italic.svg#Ragasta') format('svg');
+}

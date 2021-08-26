@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'helonik';
+    src: url('fonts/ckhans-fonts-helonik-extended-bold-demo.eot');
+    src: url('fonts/ckhans-fonts-helonik-extended-bold-demo.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ckhans-fonts-helonik-extended-bold-demo.woff2') format('woff2'),
+         url('fonts/ckhans-fonts-helonik-extended-bold-demo.woff') format('woff'),
+         url('fonts/ckhans-fonts-helonik-extended-bold-demo.ttf')  format('truetype'),
+         url('fonts/ckhans-fonts-helonik-extended-bold-demo.svg#Helonik Extended') format('svg');
+}
