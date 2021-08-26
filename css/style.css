@@ -13,7 +13,7 @@ body {
 }
 
 section {
-  margin: 0em 8em 0em 8em;
+  margin: 0em 8em 16em 8em;
 }
 
 #tejas-logo {
@@ -27,8 +27,9 @@ section {
   font-size: 0.9em;
 }
 
-.gold-nav {
-  color: #d0a100 !important;
+.gold-text {
+  color: #d0a100;
+  font-family: 'Work Sans';
 }
 
 .center-arrow {
@@ -160,14 +161,76 @@ section {
 #tagline {
   font-family: "ragastaregular";
   font-size: 4em;
-  margin-bottom: 20.2em;
+  margin-bottom: -0.2em;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.subtitle {
+  font-size: 4em;
+  font-family: "ragastaregular";
+}
+
+a {
+  color: #d0a100;
+}
+
+.skills {
+  margin-bottom: -0em;
+}
+
+.code-text {
+  font-family: "Source Code Pro";
+}
+
+.accordion {
+  margin-top: 2em;
+}
+
+.accordion-body {
+  color: black;
+  background-color: #fdffe3;
+  border-radius: 0px;
+}
+
+.accordion-button {
+  background-color: #2b2b2b;
+  color: white;
+  border-radius: 0px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #d0a100;
+  background-color: #fdffe3;
+}
+
+.accordion-button.collapsed::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d0a100'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+#self-pic {
+  margin-top: 1em;
+  -webkit-filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em #d0a100);
+          filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em #d0a100);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+#self-pic:hover {
+  -webkit-filter: sepia(100%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
+          filter: sepia(100%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
 }
 
 #footer {
   background-color: black;
   text-align: center;
   padding: 3em 0em 2.5em 0em;
+  margin-bottom: 0em;
 }
 
 #flowers {
@@ -202,7 +265,7 @@ section {
     margin: 0em 2em 0em 2em;
   }
   section {
-    margin: 0em 1em 0em 1em;
+    margin: 0em 1em 16em 1em;
   }
   #tejas {
     margin-top: calc(400px - 16vw);
@@ -216,6 +279,9 @@ section {
   #tagline {
     margin-left: 6vw;
     font-size: Max(5vw, 2em);
+  }
+  .subtitle {
+    font-size: Max(6vw, 3em);
   }
 }
 /*# sourceMappingURL=style.css.map */
