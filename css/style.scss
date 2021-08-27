@@ -43,6 +43,21 @@ section {
     font-family: 'Work Sans';
 }
 
+.autohide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 1030;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
 //HERO/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //HERO/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //HERO/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -296,6 +311,7 @@ a {
 @media only screen and (max-width: 991px) {
     .navbar {
         margin: 0em 2em 0em 2em;
+        background-image: linear-gradient(180deg, #000000, #000000);
     }
     section {
         margin: 0em 1em 16em 1em;
