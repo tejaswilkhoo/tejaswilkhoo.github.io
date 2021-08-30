@@ -357,10 +357,6 @@ a {
     font-size: 1.5em;
 }
 
-.row{
-    //border: 5px solid white;
-}
-
 .job-role {
     padding: 0.5em 0em 0.5em 0em;
 }
@@ -486,6 +482,13 @@ i {
     .subtitle {
         font-size: Max(6vw, 3em);
     }
+    #self-pic {
+        width: 60%;
+        height: auto;
+        
+    }
+
+
     i {
         font-size: 11vw;
         padding: 0.2em;

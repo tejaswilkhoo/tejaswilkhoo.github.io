@@ -426,6 +426,10 @@ i {
   .subtitle {
     font-size: Max(6vw, 3em);
   }
+  #self-pic {
+    width: 60%;
+    height: auto;
+  }
   i {
     font-size: 11vw;
     padding: 0.2em;
