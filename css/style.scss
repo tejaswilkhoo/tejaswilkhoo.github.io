@@ -58,6 +58,27 @@ section {
 //     background-color: #b18700;
 // }
 
+#btnScrollToTop {
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 0 10px $gold;
+    color: $gold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 5;
+}
+
+#btnScrollToTop:active {
+    background: #4e3c00;
+}
+
 //NAVBAR/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //NAVBAR/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //NAVBAR/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -306,6 +327,7 @@ a {
 }
 
 #self-pic {
+    border-radius: 1em;
     margin-top: 1em;
     border: 5px solid $gold;
     filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em $gold);
@@ -321,6 +343,12 @@ a {
 //EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+#job-contents {
+    //border: 5px solid green;
+    background-color: #4e3c00;
+    border-radius: 1em;
+}
 
 .work-experience {
     margin-top: 2em;
@@ -344,6 +372,7 @@ a {
 }
 
 .job-title {
+    margin-top: 0.5em;
     font-size: 2.5em;
 }
 
@@ -365,7 +394,7 @@ a {
 //CONTACT/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CONTACT/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-i {
+.contact-icon {
     color: $gold;
     font-size: 7em;
     padding: 0.5em;
@@ -438,7 +467,7 @@ i {
 
 @media only screen and (max-width: 1272px) {
     #tejas {
-        margin-top: 330px;
+        margin-top: calc(380px - 3vw);
         font-size: 10vw;
     }
     #wilkhoo {
@@ -461,7 +490,7 @@ i {
         padding: 0em 1em 0em 1em;
     }
     #tejas {
-        margin-top: 380px;
+        margin-top: calc(450px - 3vw);
         margin-left: 0.3em;
         font-size: Max(10vw, 3.4em);
     }
