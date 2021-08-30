@@ -39,7 +39,7 @@ body {
 
 section {
   padding: 0em 8em 0em 8em;
-  margin-bottom: 16em;
+  margin: 8em 0em 8em 0em;
 }
 
 #tejas-logo {
@@ -88,6 +88,10 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+#hero {
+  margin: 0em 0em 16em 0em;
+}
+
 .center-arrow {
   z-index: -5;
   position: relative;
@@ -117,23 +121,23 @@ section {
 
 @-webkit-keyframes rotate-right {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
   }
 }
 
 @keyframes rotate-right {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
   }
 }
 
@@ -151,8 +155,8 @@ section {
   border-right: 300px solid transparent;
   -webkit-transform-origin: 50% 65%;
           transform-origin: 50% 65%;
-  -webkit-animation: rotate-right-2 200s linear infinite;
-          animation: rotate-right-2 200s linear infinite;
+  -webkit-animation: rotate-right-2 360s linear infinite;
+          animation: rotate-right-2 360s linear infinite;
 }
 
 .center-arrow-gold-2 {
@@ -167,23 +171,23 @@ section {
 
 @-webkit-keyframes rotate-right-2 {
   from {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
   }
   to {
-    -webkit-transform: rotate(365deg);
-            transform: rotate(365deg);
+    -webkit-transform: rotate(420deg);
+            transform: rotate(420deg);
   }
 }
 
 @keyframes rotate-right-2 {
   from {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
   }
   to {
-    -webkit-transform: rotate(365deg);
-            transform: rotate(365deg);
+    -webkit-transform: rotate(420deg);
+            transform: rotate(420deg);
   }
 }
 
@@ -284,6 +288,45 @@ a {
           filter: sepia(100%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
 }
 
+.work-experience {
+  margin-top: 2em;
+}
+
+.list-group-item {
+  background-color: black;
+  color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.list-group-item:hover {
+  background-color: #4e3c00;
+  color: white;
+  cursor: pointer;
+}
+
+.list-group-item.active {
+  background-color: #d0a100;
+  border-color: transparent;
+}
+
+.job-title {
+  font-size: 2.5em;
+}
+
+.job-dates {
+  font-size: 1.5em;
+}
+
+.job-role {
+  padding: 0.5em 0em 0.5em 0em;
+}
+
+.gold-text-job {
+  color: #d0a100;
+  font-family: 'ragastaitalic';
+}
+
 i {
   color: #d0a100;
   font-size: 7em;
@@ -317,14 +360,18 @@ i {
 }
 
 #contact {
-  margin-bottom: 1em;
+  margin-bottom: 4em;
+}
+
+.mail {
+  cursor: pointer;
 }
 
 #footer {
   background-color: black;
   text-align: center;
   padding: 3em 1em 2.5em 1em;
-  margin-bottom: 0em;
+  margin: 4em 0em 0em 0em;
 }
 
 #flowers {
@@ -385,6 +432,12 @@ i {
   }
   #contact {
     margin-bottom: 3em;
+  }
+  #job-contents {
+    margin-top: 2em;
+  }
+  .job-title {
+    font-size: Max(5vw, 2em);
   }
 }
 /*# sourceMappingURL=style.css.map */

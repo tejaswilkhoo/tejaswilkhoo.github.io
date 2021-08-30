@@ -64,7 +64,7 @@ body {
 
 section {
     padding: 0em 8em 0em 8em;
-    margin-bottom: 16em;
+    margin: 8em 0em 8em 0em;
 }
 
 #tejas-logo {
@@ -110,6 +110,10 @@ section {
 //HERO/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //HERO/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+#hero {
+    margin: 0em 0em 16em 0em;
+}
+
 // Rotating Triangle Inspiration: https://codepen.io/billputer/pen/VYvVVj
 
 $center-size: 800;
@@ -151,10 +155,10 @@ $inner-ratio: 0.98;
 @keyframes rotate-right
 {
     from { 
-        transform: rotate(0deg);
+        transform: rotate(45deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(405deg);
     }
 }
 
@@ -180,7 +184,7 @@ $inner-ratio: 0.98;
     border-right: #{($center-size-2 / 2)}px solid transparent;
     transform-origin: 50% 65%;
 
-    animation: rotate-right-2 200s linear infinite;
+    animation: rotate-right-2 360s linear infinite;
   
 }
 
@@ -201,10 +205,10 @@ $inner-ratio: 0.98;
 @keyframes rotate-right-2
 {
     from { 
-        transform: rotate(5deg);
+        transform: rotate(60deg);
     }
     to {
-        transform: rotate(365deg);
+        transform: rotate(420deg);
     }
 }
 
@@ -319,6 +323,52 @@ a {
     filter: sepia(100%) brightness(90%) drop-shadow(1em 1em 1em $gold);
 }
 
+//EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.work-experience {
+    margin-top: 2em;
+}
+
+.list-group-item {
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #4e3c00;
+    color: white;
+    cursor: pointer;
+}
+
+.list-group-item.active {
+    background-color: $gold;
+    border-color: transparent; 
+}
+
+.job-title {
+    font-size: 2.5em;
+}
+
+.job-dates {
+    font-size: 1.5em;
+}
+
+.row{
+    //border: 5px solid white;
+}
+
+.job-role {
+    padding: 0.5em 0em 0.5em 0em;
+}
+
+.gold-text-job {
+    color: $gold;
+    font-family: 'ragastaitalic';
+}
 
 //CONTACT/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //CONTACT/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -358,8 +408,15 @@ i {
 }
 
 #contact {
-    margin-bottom: 1em;
+    margin-bottom: 4em;
 }
+
+.mail {
+    cursor: pointer;
+}
+
+
+
 //FOOTER/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //FOOTER/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //FOOTER/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -369,7 +426,7 @@ i {
     background-color: black;
     text-align: center;
     padding: 3em 1em 2.5em 1em;
-    margin-bottom: 0em;
+    margin: 4em 0em 0em 0em;
 
 }
 
@@ -435,5 +492,13 @@ i {
     }
     #contact {
         margin-bottom: 3em;
+    }
+
+    #job-contents {
+        margin-top: 2em;
+    }
+
+    .job-title {
+        font-size: Max(5vw, 2em);
     }
 }
