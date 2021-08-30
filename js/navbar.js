@@ -1,23 +1,21 @@
 console.log("navbar.js loaded");
 
 //Autohide the navbar upon scrolling
-document.addEventListener("DOMContentLoaded", function(){
-  el_autohide = document.querySelector('.autohide');
-  navbar_height = document.querySelector('.navbar').offsetHeight;
-  document.body.style.paddingTop = navbar_height + 'px';
-  if(el_autohide){
-    var last_scroll_top = 0;
-    window.addEventListener('scroll', function() {
-      let scroll_top = window.scrollY;
-      if(scroll_top < last_scroll_top) {
-          el_autohide.classList.remove('scrolled-down');
-          el_autohide.classList.add('scrolled-up');
-      }
-      else {
-          el_autohide.classList.remove('scrolled-up');
-          el_autohide.classList.add('scrolled-down');
-      }
-      last_scroll_top = scroll_top;
-    }); 
-  }  
-});
+var lastScrollTop = 0;
+document.addEventListener("scroll", function(){
+  var st = window.pageYOffset || document.documentElement.scrollTop;
+  if (st > lastScrollTop){
+  // downscroll code
+    console.log("scrolldown");
+    document.getElementById("autohide").classList.remove("scrolled-up");
+    document.getElementById("autohide").classList.add("scrolled-down");
+  } 
+  else {
+    console.log("scrollup");
+    document.getElementById("autohide").classList.remove("scrolled-down");
+    document.getElementById("autohide").classList.add("scrolled-up");
+    document.getElementById("navbarSupportedContent").classList.remove("show");
+    // upscroll code
+  }
+  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+}, false);

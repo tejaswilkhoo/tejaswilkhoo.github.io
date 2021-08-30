@@ -60,7 +60,7 @@ document.getElementById("kraftwerx").addEventListener("click", function() {
     document.getElementById("job-contents").innerHTML = 
     `          
     <h3 class="job-title text-center">Founder & Mentor <span class="gold-text-job">@Kraftwerx</span> </h3>
-    <h4 class="job-dates text-center">June 2021 - July 2021</h4>
+    <h4 class="job-dates text-center">July 2017 - May 2021</h4>
     <ul>
       <li class="job-role">
         Created Kraftwerx Robotics to help students develop an interdisciplinary comprehension of STEM Education through modern languages/software, such as AutoCAD, C++, and Python.

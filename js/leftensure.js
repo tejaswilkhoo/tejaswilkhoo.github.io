@@ -1,10 +1,7 @@
-console.log("leftensure.js loaded");
+console.log("tleftensure.js loaded");
 
 
 let stateCheck = setInterval(() => {
-
-
-
   if (document.readyState === 'complete') {
     console.log("Oh, you're a developer too?");
     document.documentElement.scrollLeft = 0;

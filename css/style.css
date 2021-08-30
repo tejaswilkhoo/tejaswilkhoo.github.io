@@ -12,6 +12,11 @@ body {
   font-family: 'Work Sans';
 }
 
+section {
+  padding: 0em 8em 0em 8em;
+  margin: 0em 0em 8em 0em;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -37,11 +42,6 @@ body {
   padding: 0em 4em 0em 4em;
 }
 
-section {
-  padding: 0em 8em 0em 8em;
-  margin: 8em 0em 8em 0em;
-}
-
 #tejas-logo {
   width: 4em !important;
   height: auto !important;
@@ -58,20 +58,12 @@ section {
   font-family: 'Work Sans';
 }
 
-.autohide {
+#autohide {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
-}
-
-.autohide {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+  z-index: 1000;
 }
 
 .scrolled-down {
@@ -196,7 +188,7 @@ section {
   font-family: "ragastaitalic";
   font-size: 8em;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 #wilkhoo {
@@ -387,7 +379,7 @@ i {
 
 @media only screen and (max-width: 1272px) {
   #tejas {
-    margin-top: calc(450px - 16vw);
+    margin-top: 330px;
     font-size: 10vw;
   }
   #wilkhoo {
@@ -411,7 +403,7 @@ i {
     padding: 0em 1em 0em 1em;
   }
   #tejas {
-    margin-top: calc(400px - 16vw);
+    margin-top: 380px;
     margin-left: 0.3em;
     font-size: Max(10vw, 3.4em);
   }
