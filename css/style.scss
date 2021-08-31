@@ -453,7 +453,7 @@ hr {
 
 .contact-icon {
     color: $gold;
-    font-size: 3em;
+    font-size: 7em;
     padding: 0.3em;
     text-align: center;
 }
@@ -598,7 +598,9 @@ hr {
     .job-title {
         font-size: Max(5vw, 2em);
     }
-
+    .contact-icon {
+        font-size: 4em;
+    }
 
 
 }
