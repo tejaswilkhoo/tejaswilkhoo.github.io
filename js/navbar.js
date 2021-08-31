@@ -6,12 +6,12 @@ document.addEventListener("scroll", function(){
   var st = window.pageYOffset || document.documentElement.scrollTop;
   if (st > lastScrollTop){
   // downscroll code
-    console.log("scrolldown");
+    //console.log("scrolldown");
     document.getElementById("autohide").classList.remove("scrolled-up");
     document.getElementById("autohide").classList.add("scrolled-down");
   } 
   else {
-    console.log("scrollup");
+    //console.log("scrollup");
     document.getElementById("autohide").classList.remove("scrolled-down");
     document.getElementById("autohide").classList.add("scrolled-up");
     document.getElementById("navbarSupportedContent").classList.remove("show");
