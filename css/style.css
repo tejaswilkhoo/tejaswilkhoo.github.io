@@ -36,28 +36,6 @@ section {
   background-color: #b18700;
 }
 
-#btnScrollToTop {
-  position: fixed;
-  right: 5px;
-  bottom: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: black;
-  -webkit-box-shadow: 0 0 10px #d0a100;
-          box-shadow: 0 0 10px #d0a100;
-  color: #d0a100;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 2em;
-  z-index: 5;
-}
-
-#btnScrollToTop:active {
-  background: #4e3c00;
-}
-
 .navbar {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#00000000));
   background-image: linear-gradient(180deg, #000000, #00000000);
@@ -348,10 +326,66 @@ a {
   font-family: 'ragastaitalic';
 }
 
+.card {
+  margin: 1em 1em 1em 1em;
+  background-color: black;
+  border: 5px solid #d0a100;
+  border-radius: 0px;
+  -webkit-filter: drop-shadow(-0.5em 0.5em 10px rgba(255, 255, 255, 0.5));
+          filter: drop-shadow(-0.5em 0.5em 10px rgba(255, 255, 255, 0.5));
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.card:hover {
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(-0.5em 0.5em 10px rgba(208, 160, 0, 0.5));
+          filter: drop-shadow(-0.5em 0.5em 10px rgba(208, 160, 0, 0.5));
+}
+
+.card .card-img-top {
+  border-radius: 0px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  border-radius: 14px;
+}
+
+.card-row {
+  margin-top: 2em;
+}
+
+.card-title {
+  color: #d0a100;
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.card-text {
+  height: 6em;
+}
+
+.card-code {
+  font-family: 'Source Code Pro';
+  font-size: 0.8em;
+}
+
+hr {
+  background-color: #d0a100;
+  opacity: 1;
+}
+
+.card-icon {
+  font-size: 2em;
+  margin: 0em 0.3em 0em 0.3em;
+}
+
 .contact-icon {
   color: #d0a100;
-  font-size: 7em;
-  padding: 0.5em;
+  font-size: 3em;
+  padding: 0.3em;
   text-align: center;
 }
 
@@ -381,10 +415,10 @@ a {
 }
 
 #contact {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
-.mail {
+#email {
   cursor: pointer;
 }
 
@@ -392,7 +426,8 @@ a {
   background-color: black;
   text-align: center;
   padding: 3em 1em 2.5em 1em;
-  margin: 4em 0em 0em 0em;
+  margin: 0em 0em 0em 0em;
+  border-top: 2px solid #d0a100;
 }
 
 #flowers {
@@ -404,6 +439,12 @@ a {
 
 #flowers:hover {
   letter-spacing: 0.03em;
+}
+
+@media only screen and (max-width: 1335px) {
+  .card-text {
+    height: 8em;
+  }
 }
 
 @media only screen and (max-width: 1272px) {
@@ -419,6 +460,12 @@ a {
   }
   .nav-link {
     margin: 0em 0.6em 0em 0.6em;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card-text {
+    height: 6em;
   }
 }
 
@@ -451,9 +498,12 @@ a {
     width: 60%;
     height: auto;
   }
-  i {
-    font-size: 11vw;
-    padding: 0.2em;
+  .card {
+    width: Min(30em, 100%);
+    height: auto;
+  }
+  .card-text {
+    height: 4em;
   }
   #contact {
     margin-bottom: 3em;

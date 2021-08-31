@@ -1,11 +1,11 @@
 console.log("scrolltotop.js loaded");
 
-const btnScrollToTop = document.querySelector("#btnScrollToTop");
+// const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
-btnScrollToTop.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth"
-    });
-});
+// btnScrollToTop.addEventListener("click", function () {
+//     window.scrollTo({
+//         top: 0,
+//         left: 0,
+//         behavior: "smooth"
+//     });
+// });
