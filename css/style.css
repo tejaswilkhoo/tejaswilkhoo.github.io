@@ -509,6 +509,11 @@ hr {
   margin-right: auto;
 }
 
+.title-404 {
+  font-family: "ragastaregular";
+  font-size: 3em;
+}
+
 @media only screen and (max-width: 1335px) {
   .card-text {
     height: 8em;

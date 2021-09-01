@@ -11,6 +11,6 @@ req.addEventListener("load", function(){
 	if(req.status == 200 && req.readyState == 4){
   	const response = JSON.parse(req.responseText);
     document.getElementById("nasa-pic").src = response.hdurl;
-    document.getElementById("date").textContent = response.date;
+    document.getElementById("title-404-content").textContent = response.title;
   }
 })
