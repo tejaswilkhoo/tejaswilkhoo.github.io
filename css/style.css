@@ -13,8 +13,8 @@ body {
 }
 
 section {
-  padding: 0em 8em 0em 8em;
-  margin: 0em 0em 8em 0em;
+  padding: 4em 0em 4em 0em;
+  margin: 0em 8em 0em 8em;
 }
 
 ::-webkit-scrollbar {
@@ -49,12 +49,25 @@ section {
 #tejas-logo {
   width: 4em !important;
   height: auto !important;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#tejas-logo:hover {
+  -webkit-filter: drop-shadow(0px 0px 3px #ffffff);
+          filter: drop-shadow(0px 0px 3px #ffffff);
 }
 
 .nav-link {
   color: white !important;
   margin: 0em 1em 0em 1em;
   font-size: 0.9em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  text-shadow: 0px 0px 10px #ffffff;
 }
 
 .gold-text {
@@ -85,7 +98,7 @@ section {
 }
 
 #hero {
-  margin: 0em 0em 16em 0em;
+  padding: 0em 0em 16em 0em;
 }
 
 .center-arrow {
@@ -231,6 +244,11 @@ a {
   color: #d0a100;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #d0a100;
+}
+
 .skills {
   margin-bottom: -0em;
 }
@@ -281,8 +299,8 @@ a {
 }
 
 #self-pic:hover {
-  -webkit-filter: sepia(100%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
-          filter: sepia(100%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
+  -webkit-filter: sepia(50%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
+          filter: sepia(50%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
 }
 
 #job-contents {
@@ -384,6 +402,15 @@ hr {
 .card-icon {
   font-size: 2em;
   margin: 0em 0.3em 0em 0.3em;
+  position: relative;
+  top: 0;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.card-icon:hover {
+  top: -3px;
+  color: #d0a100;
 }
 
 .contact-icon {
@@ -517,7 +544,7 @@ hr {
     background-image: linear-gradient(180deg, #000000, #000000);
   }
   section {
-    padding: 0em 1em 0em 1em;
+    margin: 0em 1em 0em 1em;
   }
   #tejas {
     margin-top: calc(450px - 3vw);
