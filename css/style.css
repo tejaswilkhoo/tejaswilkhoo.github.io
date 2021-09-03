@@ -387,6 +387,10 @@ a:hover {
   font-weight: 900;
 }
 
+.card-text {
+  height: auto;
+}
+
 .card-code {
   font-family: 'Source Code Pro';
   font-size: 0.8em;
@@ -572,9 +576,6 @@ hr {
   .card {
     width: Min(30em, 100%);
     height: auto;
-  }
-  .card-text {
-    height: 4em;
   }
   #contact {
     margin-bottom: 3em;
