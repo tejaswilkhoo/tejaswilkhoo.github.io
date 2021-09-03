@@ -440,7 +440,7 @@ a:hover {
 }
 
 .card-text{
-    height: auto;
+    height: 6em;
 }
 
 .card-code {
@@ -641,15 +641,22 @@ hr {
     }
     #self-pic {
         width: 60%;
-        height: auto;
-        
+        height: auto;   
+    }
+
+    #self-pic:hover {
+        filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em $gold);
     }
 
     .card {
         width: Min(30em, 100%); 
         height: auto;
     }
-    
+
+    .card-text{
+        height: auto;
+    }
+
     #contact {
         margin-bottom: 3em;
     }

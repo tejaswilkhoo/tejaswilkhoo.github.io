@@ -388,7 +388,7 @@ a:hover {
 }
 
 .card-text {
-  height: auto;
+  height: 6em;
 }
 
 .card-code {
@@ -573,8 +573,15 @@ hr {
     width: 60%;
     height: auto;
   }
+  #self-pic:hover {
+    -webkit-filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em #d0a100);
+            filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em #d0a100);
+  }
   .card {
     width: Min(30em, 100%);
+    height: auto;
+  }
+  .card-text {
     height: auto;
   }
   #contact {
