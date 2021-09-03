@@ -1,4 +1,4 @@
-console.log("navbar.js loaded");
+//console.log("navbar.js loaded");
 
 //Autohide the navbar upon scrolling
 var lastScrollTop = 0;

@@ -1,4 +1,4 @@
-console.log("404.js loaded");
+//console.log("404.js loaded");
 
 const req = new XMLHttpRequest();
 const baseURL = 'https://api.nasa.gov/planetary/apod?api_key=';

@@ -1,4 +1,4 @@
-console.log("animate.js loaded");
+//console.log("animate.js loaded");
 
 $(document).ready(function() {
     // Check if element is scrolled into view
@@ -10,8 +10,8 @@ $(document).ready(function() {
       var elemBottom = elemTop + $(elem).height();
 
     //   console.log("docViewTop: " + docViewTop);
-      console.log("docViewBottom: " + docViewBottom);
-      console.log("elemTop: 868");
+      // console.log("docViewBottom: " + docViewBottom);
+      // console.log("elemTop: 868");
     //   console.log("elemBottom: " + elemBottom);
   
       //return elemBottom <= docViewBottom && elemTop >= docViewTop;

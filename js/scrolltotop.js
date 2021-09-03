@@ -1,4 +1,4 @@
-console.log("scrolltotop.js loaded");
+//console.log("scrolltotop.js loaded");
 
 // const btnScrollToTop = document.querySelector("#btnScrollToTop");
 

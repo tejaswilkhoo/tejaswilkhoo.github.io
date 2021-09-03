@@ -1,8 +1,8 @@
-console.log("experience.js loaded");
+//console.log("experience.js loaded");
 
 document.getElementById("cssi").addEventListener("click", function() {
   if(!(document.getElementById("cssi").classList.contains("active"))) {
-    console.log("toggling cssi");
+    //console.log("toggling cssi");
     document.getElementById("cssi").classList.add("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.remove("active");
