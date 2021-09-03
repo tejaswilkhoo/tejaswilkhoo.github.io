@@ -1,4 +1,4 @@
-//console.log("tleftensure.js loaded");
+//console.log("leftensure.js loaded");
 
 
 let stateCheck = setInterval(() => {
