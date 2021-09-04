@@ -1,6 +1,5 @@
 //console.log("leftensure.js loaded");
 
-
 let stateCheck = setInterval(() => {
   if (document.readyState === 'complete') {
     console.log("Oh, you're a developer too?");
