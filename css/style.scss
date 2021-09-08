@@ -621,7 +621,7 @@ hr {
 
 @media only screen and (max-width: 1272px) {
     #tejas {
-        margin-top: calc(420px - 3vw);
+        margin-top: 40vh; //calc(420px - 3vw)
         font-size: 10vw;
     }
     #wilkhoo {
@@ -652,8 +652,16 @@ hr {
     section {
         margin: 0em 1em 0em 1em;
     }
+
+    .center-arrow {
+        border-bottom: #{$center-size * $triangle-ratio}px solid black;
+    }
+    .center-arrow-2 {
+        border-bottom: #{$center-size-2 * $triangle-ratio}px solid black;
+    }
+
     #tejas {
-        margin-top: calc(450px - 3vw);
+        margin-top: 45vh; //calc(450px - 3vw)
         margin-left: 0.3em;
         font-size: Max(10vw, 3.4em);
     }
