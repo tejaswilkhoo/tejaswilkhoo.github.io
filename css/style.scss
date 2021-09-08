@@ -151,7 +151,7 @@ $inner-ratio: 0.98;
     border-right: #{($center-size / 2)}px solid transparent;
     transform-origin: 50% 65%;
 
-    animation: rotate-right 240s linear infinite;
+    animation: rotate-right 360s linear infinite;
   
 }
 
@@ -192,7 +192,7 @@ $inner-ratio: 0.98;
     margin: auto;
     margin-top: -35em;
     margin-bottom: -33em;
-    margin-right: -0em;
+    margin-right: 0em;
     width: 0; 
     height: 0;
 
@@ -201,7 +201,7 @@ $inner-ratio: 0.98;
     border-right: #{($center-size-2 / 2)}px solid transparent;
     transform-origin: 50% 65%;
 
-    animation: rotate-right-2 360s linear infinite;
+    animation: rotate-right-2 540s linear infinite;
   
 }
 
@@ -236,7 +236,7 @@ $inner-ratio: 0.98;
     font-size: 8em;
     text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
     
-    margin-top: 2.5em;
+    margin-top: 35vh; //2.5em
 }
 
 #wilkhoo {
@@ -272,6 +272,10 @@ $inner-ratio: 0.98;
     font-size: 4em;
     margin-bottom: -0.2em; //-0.2
     text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
+#current-quote {
+    margin-top: 0.7em;
 }
 
 
@@ -587,6 +591,28 @@ hr {
 //MEDIA QUERIES/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MEDIA QUERIES/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+@media only screen and (min-width: 1800px) {
+    #hero {
+        padding: 0em 0em 16em 8em;
+    }
+
+    #tejas{
+        margin-top: 30vh; //3.5em
+    }
+
+    .center-arrow {
+        margin-top: -5em;
+        margin-right: -4em;
+    }
+
+    .center-arrow-2 {
+        margin-top: -35em;
+        margin-bottom: -33em;
+        margin-right: 3em;
+    }
+}
+
 @media only screen and (max-width: 1335px) {
     .card-text{
         height: 8em;
@@ -595,7 +621,7 @@ hr {
 
 @media only screen and (max-width: 1272px) {
     #tejas {
-        margin-top: calc(380px - 3vw);
+        margin-top: calc(420px - 3vw);
         font-size: 10vw;
     }
     #wilkhoo {
@@ -603,6 +629,9 @@ hr {
     }
     #tagline {
         font-size: 5vw;
+    }
+    #current-quote {
+        font-size: 2vw;
     }
     .nav-link {
         margin: 0em 0.6em 0em 0.6em;
@@ -635,6 +664,10 @@ hr {
     #tagline {
         margin-left: 6vw;
         font-size: Max(5vw, 2em);
+    }
+    #current-quote {
+        margin-left: 6vw;
+        font-size: Max(3vw, 1.3em);
     }
     .subtitle {
         font-size: Max(6vw, 3em);
