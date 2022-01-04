@@ -338,16 +338,12 @@ a:hover {
 }
 
 #self-pic {
-    border-radius: 1em;
+    //border-radius: 1em;
     margin-top: 1em;
-    border: 5px solid $gold;
-    filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em $gold);
+    border: 3px solid $gold;
+    //filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em $gold);
     transition: 1s ease-in-out;
     
-}
-
-#self-pic:hover {
-    filter: sepia(50%) brightness(90%) drop-shadow(1em 1em 1em $gold);
 }
 
 //EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -356,9 +352,10 @@ a:hover {
 //EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #job-contents {
-    //border: 5px solid green;
-    background-color: #4e3c00;
-    border-radius: 1em;
+    border-top: 3px solid $gold;
+    border-bottom: 3px solid $gold;
+    //background-color: #4e3c00;
+    //border-radius: 1em;
     //height: 26em;
 }
 
@@ -480,6 +477,11 @@ hr {
     font-size: 7em;
     padding: 0.3em;
     text-align: center;
+    transition: 1s ease-in-out;
+}
+
+.contact-icon:hover {
+    text-shadow: 0px 0px 10px rgb(216, 194, 0);
 }
 
 .popover-body {
@@ -683,10 +685,6 @@ hr {
     #self-pic {
         width: 60%;
         height: auto;   
-    }
-
-    #self-pic:hover {
-        filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em $gold);
     }
 
     .card {

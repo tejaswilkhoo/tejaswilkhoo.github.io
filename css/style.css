@@ -295,23 +295,15 @@ a:hover {
 }
 
 #self-pic {
-  border-radius: 1em;
   margin-top: 1em;
-  border: 5px solid #d0a100;
-  -webkit-filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em #d0a100);
-          filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em #d0a100);
+  border: 3px solid #d0a100;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
 
-#self-pic:hover {
-  -webkit-filter: sepia(50%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
-          filter: sepia(50%) brightness(90%) drop-shadow(1em 1em 1em #d0a100);
-}
-
 #job-contents {
-  background-color: #4e3c00;
-  border-radius: 1em;
+  border-top: 3px solid #d0a100;
+  border-bottom: 3px solid #d0a100;
 }
 
 .work-experience {
@@ -424,6 +416,12 @@ hr {
   font-size: 7em;
   padding: 0.3em;
   text-align: center;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.contact-icon:hover {
+  text-shadow: 0px 0px 10px #d8c200;
 }
 
 .popover-body {
@@ -607,10 +605,6 @@ hr {
   #self-pic {
     width: 60%;
     height: auto;
-  }
-  #self-pic:hover {
-    -webkit-filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em #d0a100);
-            filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em #d0a100);
   }
   .card {
     width: Min(30em, 100%);
