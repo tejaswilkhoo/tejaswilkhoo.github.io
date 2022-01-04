@@ -107,7 +107,7 @@ section {
   z-index: -5;
   position: relative;
   margin: auto;
-  margin-top: -7em;
+  margin-top: -8em;
   margin-right: -9em;
   width: 0;
   height: 0;
@@ -165,7 +165,7 @@ section {
   position: relative;
   margin: auto;
   margin-top: -34em;
-  margin-bottom: -38em;
+  margin-bottom: -37em;
   margin-right: 0em;
   width: 0;
   height: 0;
@@ -219,8 +219,8 @@ section {
 }
 
 #wilkhoo {
-  background-image: -webkit-gradient(linear, left top, right top, from(#977807), to(#d0a100));
-  background-image: linear-gradient(90deg, #977807, #d0a100);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6b5200), to(#d0a100));
+  background-image: linear-gradient(90deg, #6b5200, #d0a100);
   -webkit-background-clip: text;
   -ms-background-clip: text;
   background-clip: text;
@@ -310,8 +310,26 @@ a:hover {
 }
 
 #job-contents {
-  border-top: 3px solid #d0a100;
-  border-bottom: 3px solid #d0a100;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+  background: #000;
+  background-clip: padding-box;
+  border: solid 3px transparent;
+}
+
+#job-contents:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: inherit;
+  background: linear-gradient(225deg, #d0a100, black);
 }
 
 .work-experience {
@@ -355,30 +373,42 @@ a:hover {
 }
 
 .card {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+  background: #000;
+  background-clip: padding-box;
+  border: solid 3px transparent;
   margin: 1em 1em 1em 1em;
   background-color: black;
-  border: 5px solid #d0a100;
-  border-radius: 0px;
-  -webkit-filter: drop-shadow(-0.5em 0.5em 10px rgba(255, 255, 255, 0.5));
-          filter: drop-shadow(-0.5em 0.5em 10px rgba(255, 255, 255, 0.5));
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
 }
 
+.card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: inherit;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d0a100), to(black));
+  background: linear-gradient(180deg, #d0a100, black);
+}
+
 .card:hover {
-  border-radius: 20px;
-  -webkit-filter: drop-shadow(-0.5em 0.5em 10px rgba(208, 160, 0, 0.5));
-          filter: drop-shadow(-0.5em 0.5em 10px rgba(208, 160, 0, 0.5));
+  -webkit-box-shadow: 0px 0px 40px 0px #888888;
+          box-shadow: 0px 0px 40px 0px #888888;
 }
 
 .card .card-img-top {
   border-radius: 0px;
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-}
-
-.card:hover .card-img-top {
-  border-radius: 14px;
 }
 
 .card-row {
@@ -429,7 +459,7 @@ hr {
 }
 
 .contact-icon:hover {
-  color: #ffde74;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.75);
 }
 
 .popover-body {
