@@ -219,8 +219,8 @@ section {
 }
 
 #wilkhoo {
-  background-image: -webkit-gradient(linear, left top, right top, from(#6b5200), to(#d0a100));
-  background-image: linear-gradient(90deg, #6b5200, #d0a100);
+  background-image: -webkit-gradient(linear, left top, right top, from(#957200), to(#d0a100));
+  background-image: linear-gradient(90deg, #957200, #d0a100);
   -webkit-background-clip: text;
   -ms-background-clip: text;
   background-clip: text;
