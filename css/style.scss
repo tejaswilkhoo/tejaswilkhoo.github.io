@@ -141,7 +141,7 @@ $inner-ratio: 0.98;
     z-index: -5;
     position: relative;
     margin: auto;
-    margin-top: -10em;
+    margin-top: -7em;
     margin-right: -9em;
     width: 0; 
     height: 0;
@@ -151,7 +151,7 @@ $inner-ratio: 0.98;
     border-right: #{($center-size / 2)}px solid transparent;
     transform-origin: 50% 65%;
 
-    animation: rotate-right 360s linear infinite;
+    animation: rotate-right 360s linear infinite; //360s
   
 }
 
@@ -171,15 +171,18 @@ $inner-ratio: 0.98;
 
 @keyframes rotate-right
 {
-    from { 
-        transform: rotate(45deg);
+    0% { 
+        transform: rotate(45deg) translateY(0px); //45
     }
-    to {
-        transform: rotate(405deg);
+
+    50% {
+        transform: rotate(225deg) translateY(-100px);  
+    }
+    
+    100% {
+        transform: rotate(405deg) translateY(0px); //405
     }
 }
-
-
 
 
 $center-size-2: 600;
@@ -190,8 +193,8 @@ $inner-ratio: 0.98;
     z-index: -5;
     position: relative;
     margin: auto;
-    margin-top: -35em;
-    margin-bottom: -33em;
+    margin-top: -34em;
+    margin-bottom: -38em;
     margin-right: 0em;
     width: 0; 
     height: 0;
@@ -201,7 +204,7 @@ $inner-ratio: 0.98;
     border-right: #{($center-size-2 / 2)}px solid transparent;
     transform-origin: 50% 65%;
 
-    animation: rotate-right-2 540s linear infinite;
+    animation: rotate-right-2 540s linear infinite; //540s
   
 }
 
@@ -222,7 +225,7 @@ $inner-ratio: 0.98;
 @keyframes rotate-right-2
 {
     from { 
-        transform: rotate(60deg);
+        transform: rotate(60deg); //60
     }
     to {
         transform: rotate(420deg);
@@ -477,11 +480,11 @@ hr {
     font-size: 7em;
     padding: 0.3em;
     text-align: center;
-    transition: 1s ease-in-out;
+    transition: 0.75s ease-in-out;
 }
 
 .contact-icon:hover {
-    text-shadow: 0px 0px 10px rgb(216, 194, 0);
+    color: #ffde74
 }
 
 .popover-body {

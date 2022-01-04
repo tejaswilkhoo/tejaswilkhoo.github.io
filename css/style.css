@@ -107,7 +107,7 @@ section {
   z-index: -5;
   position: relative;
   margin: auto;
-  margin-top: -10em;
+  margin-top: -7em;
   margin-right: -9em;
   width: 0;
   height: 0;
@@ -131,24 +131,32 @@ section {
 }
 
 @-webkit-keyframes rotate-right {
-  from {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+  0% {
+    -webkit-transform: rotate(45deg) translateY(0px);
+            transform: rotate(45deg) translateY(0px);
   }
-  to {
-    -webkit-transform: rotate(405deg);
-            transform: rotate(405deg);
+  50% {
+    -webkit-transform: rotate(225deg) translateY(-100px);
+            transform: rotate(225deg) translateY(-100px);
+  }
+  100% {
+    -webkit-transform: rotate(405deg) translateY(0px);
+            transform: rotate(405deg) translateY(0px);
   }
 }
 
 @keyframes rotate-right {
-  from {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+  0% {
+    -webkit-transform: rotate(45deg) translateY(0px);
+            transform: rotate(45deg) translateY(0px);
   }
-  to {
-    -webkit-transform: rotate(405deg);
-            transform: rotate(405deg);
+  50% {
+    -webkit-transform: rotate(225deg) translateY(-100px);
+            transform: rotate(225deg) translateY(-100px);
+  }
+  100% {
+    -webkit-transform: rotate(405deg) translateY(0px);
+            transform: rotate(405deg) translateY(0px);
   }
 }
 
@@ -156,8 +164,8 @@ section {
   z-index: -5;
   position: relative;
   margin: auto;
-  margin-top: -35em;
-  margin-bottom: -33em;
+  margin-top: -34em;
+  margin-bottom: -38em;
   margin-right: 0em;
   width: 0;
   height: 0;
@@ -416,12 +424,12 @@ hr {
   font-size: 7em;
   padding: 0.3em;
   text-align: center;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: 0.75s ease-in-out;
+  transition: 0.75s ease-in-out;
 }
 
 .contact-icon:hover {
-  text-shadow: 0px 0px 10px #d8c200;
+  color: #ffde74;
 }
 
 .popover-body {
