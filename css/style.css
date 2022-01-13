@@ -1,3 +1,18 @@
+::-moz-selection {
+  background: #d0a0007e;
+  /* WebKit/Blink Browsers */
+}
+
+::selection {
+  background: #d0a0007e;
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: #d0a0007e;
+  /* Gecko Browsers */
+}
+
 html {
   padding: 0px 0px 0px 0px !important;
   margin: 0px 0px 0px 0px !important;
