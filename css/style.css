@@ -25,7 +25,7 @@ body {
   overflow-x: hidden;
   background-color: black;
   color: white !important;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
   position: relative;
 }
 
@@ -89,7 +89,7 @@ section {
 
 .gold-text {
   color: #d0a100;
-  font-family: 'Work Sans';
+  font-family: "Work Sans";
 }
 
 #autohide {
@@ -131,8 +131,8 @@ section {
   border-right: 400px solid transparent;
   -webkit-transform-origin: 50% 65%;
           transform-origin: 50% 65%;
-  -webkit-animation: rotate-right 360s linear infinite;
-          animation: rotate-right 360s linear infinite;
+  -webkit-animation: rotate-right 45s ease-in-out infinite;
+          animation: rotate-right 45s ease-in-out infinite;
 }
 
 .center-arrow-gold {
@@ -147,31 +147,31 @@ section {
 
 @-webkit-keyframes rotate-right {
   0% {
-    -webkit-transform: rotate(45deg) translateY(0px);
-            transform: rotate(45deg) translateY(0px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   50% {
-    -webkit-transform: rotate(225deg) translateY(-100px);
-            transform: rotate(225deg) translateY(-100px);
+    -webkit-transform: rotate(75deg);
+            transform: rotate(75deg);
   }
   100% {
-    -webkit-transform: rotate(405deg) translateY(0px);
-            transform: rotate(405deg) translateY(0px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 }
 
 @keyframes rotate-right {
   0% {
-    -webkit-transform: rotate(45deg) translateY(0px);
-            transform: rotate(45deg) translateY(0px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   50% {
-    -webkit-transform: rotate(225deg) translateY(-100px);
-            transform: rotate(225deg) translateY(-100px);
+    -webkit-transform: rotate(75deg);
+            transform: rotate(75deg);
   }
   100% {
-    -webkit-transform: rotate(405deg) translateY(0px);
-            transform: rotate(405deg) translateY(0px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 }
 
@@ -189,8 +189,8 @@ section {
   border-right: 300px solid transparent;
   -webkit-transform-origin: 50% 65%;
           transform-origin: 50% 65%;
-  -webkit-animation: rotate-right-2 540s linear infinite;
-          animation: rotate-right-2 540s linear infinite;
+  -webkit-animation: rotate-right-2 60s ease-in-out infinite;
+          animation: rotate-right-2 60s ease-in-out infinite;
 }
 
 .center-arrow-gold-2 {
@@ -204,24 +204,32 @@ section {
 }
 
 @-webkit-keyframes rotate-right-2 {
-  from {
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
+  0% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
-  to {
-    -webkit-transform: rotate(420deg);
-            transform: rotate(420deg);
+  50% {
+    -webkit-transform: rotate(85deg);
+            transform: rotate(85deg);
+  }
+  100% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
 }
 
 @keyframes rotate-right-2 {
-  from {
-    -webkit-transform: rotate(60deg);
-            transform: rotate(60deg);
+  0% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
-  to {
-    -webkit-transform: rotate(420deg);
-            transform: rotate(420deg);
+  50% {
+    -webkit-transform: rotate(85deg);
+            transform: rotate(85deg);
+  }
+  100% {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
   }
 }
 
@@ -328,14 +336,14 @@ a:hover {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #FFF;
+  color: #fff;
   background: #000;
   background-clip: padding-box;
   border: solid 3px transparent;
 }
 
 #job-contents:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -384,14 +392,14 @@ a:hover {
 
 .gold-text-job {
   color: #d0a100;
-  font-family: 'ragastaitalic';
+  font-family: "ragastaitalic";
 }
 
 .card {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #FFF;
+  color: #fff;
   background: #000;
   background-clip: padding-box;
   border: solid 3px transparent;
@@ -402,7 +410,7 @@ a:hover {
 }
 
 .card:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -441,7 +449,7 @@ a:hover {
 }
 
 .card-code {
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
   font-size: 0.8em;
 }
 
@@ -478,7 +486,7 @@ hr {
 }
 
 .popover-body {
-  font-family: 'Work Sans' !important;
+  font-family: "Work Sans" !important;
   text-align: center;
   margin: 0px 0px 0px 0px;
   background-color: black !important;
@@ -486,13 +494,15 @@ hr {
   border-radius: 0px !important;
 }
 
-.bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow::before, .bs-popover-bottom > .popover-arrow::before {
+.bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::before,
+.bs-popover-bottom > .popover-arrow::before {
   top: 0;
-  border-width: 0 .5rem .5rem .5rem;
+  border-width: 0 0.5rem 0.5rem 0.5rem;
   border-bottom-color: white;
 }
 
-.bs-popover-auto[data-popper-placement^=bottom] > .popover-arrow::after, .bs-popover-bottom > .popover-arrow::after {
+.bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow::after,
+.bs-popover-bottom > .popover-arrow::after {
   top: 2px;
   border-width: 0 0rem 0rem 0rem !important;
   border-bottom-color: white;
@@ -579,12 +589,12 @@ hr {
     margin-top: 30vh;
   }
   .center-arrow {
-    margin-top: -5em;
+    margin-top: -4em;
     margin-right: -4em;
   }
   .center-arrow-2 {
     margin-top: -35em;
-    margin-bottom: -33em;
+    margin-bottom: -34em;
     margin-right: 3em;
   }
 }
@@ -677,6 +687,12 @@ hr {
   }
   .contact-icon {
     font-size: 4em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-container {
+    max-width: 1500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
