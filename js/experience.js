@@ -1,15 +1,75 @@
 //console.log("experience.js loaded");
 
-document.getElementById("cssi").addEventListener("click", function() {
-  if(!(document.getElementById("cssi").classList.contains("active"))) {
-    //console.log("toggling cssi");
+document.getElementById("step").addEventListener("click", function () {
+  if (!document.getElementById("step").classList.contains("active")) {
+    document.getElementById("step").classList.add("active");
+    document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("cssi").classList.remove("active");
+    document.getElementById("pdsb").classList.remove("active");
+    document.getElementById("kraftwerx").classList.remove("active");
+
+    $("#job-explanation")
+      .fadeOut(function () {
+        $(this).html(
+          `          
+          <h3 class="job-title text-center">STEP Intern <span class="gold-text-job">@Google</span> </h3>
+          <h4 class="job-dates text-center">May 2022 - Present</h4>
+          <ul>
+            <li class="job-role">
+              <b>STEP: </b>Student Training in Engineering Program
+            </li>
+            <li class="job-role">
+              Working on the tools and infrastructure team for Google Cloud Platform.
+            </li>
+          </ul>
+      `
+        );
+      })
+      .fadeIn();
+  }
+});
+
+document.getElementById("uwbp").addEventListener("click", function () {
+  if (!document.getElementById("uwbp").classList.contains("active")) {
+    document.getElementById("step").classList.remove("active");
+    document.getElementById("uwbp").classList.add("active");
+    document.getElementById("cssi").classList.remove("active");
+    document.getElementById("pdsb").classList.remove("active");
+    document.getElementById("kraftwerx").classList.remove("active");
+
+    $("#job-explanation")
+      .fadeOut(function () {
+        $(this).html(
+          `          
+          <h3 class="job-title text-center">Project Developer <span class="gold-text-job">@UW Blueprint</span> </h3>
+          <h4 class="job-dates text-center">May 2022 - Present</h4>
+          <ul>
+            <li class="job-role">
+              <b>University of Waterloo Blueprint: </b> A club dedicated to building tech for social good, providing innovative tech solutions to partnered non-profit organizations.
+            </li>
+            <li class="job-role">
+              Contributing to the Canadian Children's Book Centre project at Blueprint.
+            </li>
+          </ul>
+        `
+        );
+      })
+      .fadeIn();
+  }
+});
+
+document.getElementById("cssi").addEventListener("click", function () {
+  if (!document.getElementById("cssi").classList.contains("active")) {
+    document.getElementById("step").classList.remove("active");
+    document.getElementById("uwbp").classList.remove("active");
     document.getElementById("cssi").classList.add("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
-    $("#job-explanation").fadeOut(function(){
-      $(this).html(
-    `          
+    $("#job-explanation")
+      .fadeOut(function () {
+        $(this).html(
+          `          
       <h3 class="job-title text-center">Student <span class="gold-text-job">@Google CSSI</span> </h3>
       <h4 class="job-dates text-center">July 2021 - August 2021</h4>
       <ul>
@@ -23,23 +83,28 @@ document.getElementById("cssi").addEventListener("click", function() {
           Explored and added external API functionality (i.e., Giphy API) and JSON data formatting to modern website design while collaborating with other students using Git and GitHub.
         </li>
         <li class="job-role">
-          Integrated Firebase’s Realtime Database and authentication services into 4 different web applications to automatically manage and sync large volumes of user data, through CRUD functions.
+          Integrated Firebase's Realtime Database and authentication services into 4 different web applications to automatically manage and sync large volumes of user data, through CRUD functions.
         </li>
       </ul>
-    `)}).fadeIn();
+    `
+        );
+      })
+      .fadeIn();
   }
 });
 
-document.getElementById("pdsb").addEventListener("click", function() {
-  if(!(document.getElementById("pdsb").classList.contains("active"))) {
-    console.log("toggling pdsb");
+document.getElementById("pdsb").addEventListener("click", function () {
+  if (!document.getElementById("pdsb").classList.contains("active")) {
+    document.getElementById("step").classList.remove("active");
+    document.getElementById("uwbp").classList.remove("active");
     document.getElementById("cssi").classList.remove("active");
     document.getElementById("pdsb").classList.add("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
-    $("#job-explanation").fadeOut(function(){
-      $(this).html(
-      `
+    $("#job-explanation")
+      .fadeOut(function () {
+        $(this).html(
+          `
       <h3 class="job-title text-center">Programming Instructor <span class="gold-text-job">@Peel</span> </h3>
       <h4 class="job-dates text-center">June 2021 - July 2021</h4>
       <ul>
@@ -53,19 +118,24 @@ document.getElementById("pdsb").addEventListener("click", function() {
           Utilized popular coding platforms to add an element of interaction to the lessons, such as EarSketch and Replit.
         </li>
       </ul>
-    `)}).fadeIn();
+    `
+        );
+      })
+      .fadeIn();
   }
 });
 
-document.getElementById("kraftwerx").addEventListener("click", function() {
-if(!(document.getElementById("kraftwerx").classList.contains("active"))) {
-  console.log("toggling kraftwerx");
-  document.getElementById("cssi").classList.remove("active");
-  document.getElementById("pdsb").classList.remove("active");
-  document.getElementById("kraftwerx").classList.add("active");
+document.getElementById("kraftwerx").addEventListener("click", function () {
+  if (!document.getElementById("kraftwerx").classList.contains("active")) {
+    document.getElementById("step").classList.remove("active");
+    document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("cssi").classList.remove("active");
+    document.getElementById("pdsb").classList.remove("active");
+    document.getElementById("kraftwerx").classList.add("active");
 
-  $("#job-explanation").fadeOut(function(){
-    $(this).html(`      
+    $("#job-explanation")
+      .fadeOut(function () {
+        $(this).html(`      
     <h3 class="job-title text-center">Founder & Mentor <span class="gold-text-job">@Kraftwerx</span> </h3>
     <h4 class="job-dates text-center">July 2017 - May 2021</h4>
     <ul>
@@ -79,6 +149,8 @@ if(!(document.getElementById("kraftwerx").classList.contains("active"))) {
         Expanded the organization from 4 students to 15, who have qualified for the World Championships every year.
       </li>
     </ul>
-    `)}).fadeIn();
+    `);
+      })
+      .fadeIn();
   }
 });
