@@ -47,9 +47,6 @@ document.getElementById("uwbp").addEventListener("click", function () {
             <li class="job-role">
               <b>University of Waterloo Blueprint: </b> A club dedicated to building tech for social good, providing innovative tech solutions to partnered non-profit organizations.
             </li>
-            <li class="job-role">
-              Contributing to the Canadian Children's Book Centre project at Blueprint.
-            </li>
           </ul>
         `
         );
