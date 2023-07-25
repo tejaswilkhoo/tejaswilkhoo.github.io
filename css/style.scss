@@ -13,19 +13,19 @@ $gold: #d0a100;
 }
 
 html {
-  padding: 0px 0px 0px 0px !important;
-  margin: 0px 0px 0px 0px !important;
+  // padding: 0px 0px 0px 0px !important;
+  // margin: 0px 0px 0px 0px !important;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 body {
   max-width: 100%;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   background-color: rgb(0, 0, 0);
   color: white !important;
   font-family: "Work Sans";
-  position: relative;
+  // position: relative;
 }
 
 section {
@@ -51,27 +51,6 @@ section {
   background-color: #b18700;
 }
 
-// #btnScrollToTop {
-//     position: fixed;
-//     right: 5px;
-//     bottom: 20px;
-//     width: 50px;
-//     height: 50px;
-//     border-radius: 50%;
-//     background: rgb(0, 0, 0);
-//     box-shadow: 0 0 10px $gold;
-//     color: $gold;
-//     border: none;
-//     outline: none;
-//     cursor: pointer;
-//     font-size: 2em;
-//     z-index: 5;
-// }
-
-// #btnScrollToTop:active {
-//     background: #4e3c00;
-// }
-
 .animation-fader {
   opacity: 0;
 }
@@ -83,7 +62,7 @@ section {
 
 .navbar {
   background-image: linear-gradient(180deg, #000000, #00000000);
-  padding: 0em 4em 0em 4em;
+  padding: 0em 3.4em 0em 3.4em;
 }
 
 #tejas-logo {
@@ -135,23 +114,97 @@ section {
 //HERO/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #hero {
-  padding: 0em 0em 16em 0em;
+  margin: 0em;
+  padding: 0em;
+}
+
+#hero-container-parent {
+  height: 100vh;
+  width: calc(100vw - 20px); // Get rid of the width for the scroll bar
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-container {
+  width: 2000px;
+  // border: 1px solid white;
+  position: relative;
+}
+
+#intro-parent {
+  // display: flex;
+  // justify-content: left;
+  // align-items: center;
+  // z-index: 95;
+  // z-index: 10;
+}
+
+#intro-child {
+  text-align: left;
+  margin: 0em;
+  padding: 0em;
+  position: relative;
 }
 
 // Rotating Triangle Inspiration: https://codepen.io/billputer/pen/VYvVVj
+
+#triangles-parent {
+  // height: 100vh;
+  // width: calc(100vw - 20px); // Get rid of the width for the scroll bar
+  // position: relative;
+  // position: absolute;
+  // display: flex;
+  // justify-content: right;
+  // align-items: center;
+  // background-color: green;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  margin-left: 40em;
+  margin-top: -8em;
+}
+
+#triangles-child {
+  position: relative;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.box1 {
+  background-color: yellow;
+}
+
+#box2 {
+  background-color: lightblue;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.box3 {
+  background-color: green;
+  position: absolute;
+  z-index: 100;
+}
 
 $center-size: 800;
 $triangle-ratio: 0.86;
 $inner-ratio: 0.98;
 
 .center-arrow {
-  z-index: -5;
-  position: relative;
-  margin: auto;
-  margin-top: -8em; // -8em
-  margin-right: -9em;
+  // z-index: -10;
   width: 0;
   height: 0;
+  position: absolute;
+  margin-top: -15em;
 
   border-bottom: #{$center-size * $triangle-ratio}px solid $gold; //$gold
   border-left: #{($center-size / 2)}px solid transparent;
@@ -162,7 +215,7 @@ $inner-ratio: 0.98;
 }
 
 .center-arrow-gold {
-  z-index: -5;
+  // z-index: -10;
   position: relative;
 
   top: #{(($center-size * (1 - $inner-ratio) + 1)/ 2)}px;
@@ -193,14 +246,13 @@ $triangle-ratio: 0.86;
 $inner-ratio: 0.98;
 
 .center-arrow-2 {
-  z-index: -5;
-  position: relative;
-  margin: auto;
-  margin-top: -34em; // -34em
-  margin-bottom: -37em; // -37em
-  margin-right: 0em;
+  // z-index: -50;
+  // margin: auto;
   width: 0;
   height: 0;
+  position: absolute;
+  margin-top: -7em;
+  margin-left: 6em;
 
   border-bottom: #{$center-size-2 * $triangle-ratio}px solid white; // white
   border-left: #{($center-size-2 / 2)}px solid transparent;
@@ -211,7 +263,7 @@ $inner-ratio: 0.98;
 }
 
 .center-arrow-gold-2 {
-  z-index: -5;
+  // z-index: -50;
   position: relative;
 
   top: #{(($center-size-2 * (1 - $inner-ratio) + 1)/ 2)}px;
@@ -237,6 +289,12 @@ $inner-ratio: 0.98;
   }
 }
 
+#tagline1 {
+  font-family: "ragastaregular";
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
 #tejas {
   color: #000000;
   font-family: "ragastaitalic";
@@ -244,8 +302,22 @@ $inner-ratio: 0.98;
   text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
     -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 
-  margin-top: 35vh; //2.5em
+  // margin-top: 35vh; //2.5em
 }
+@keyframes hover {
+  0% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 
 #wilkhoo {
   background-image: linear-gradient(90deg, #957200, $gold); //#977807
@@ -271,16 +343,18 @@ $inner-ratio: 0.98;
   margin-bottom: -0.125em;
 }
 
-#tagline {
+#tagline2 {
   font-family: "ragastaregular";
   font-size: 4em;
-  margin-bottom: -0.2em; //-0.2
+  // margin-bottom: -0.2em; //-0.2
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
     -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
 }
 
-#current-quote {
-  margin-top: 0.7em;
+#tagline3 {
+  // margin-top: 0.7em;
+  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
 }
 
 //ABOUT/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -347,6 +421,13 @@ a:hover {
   border: 3px solid $gold;
   //filter: sepia(0%) brightness(100%) drop-shadow(0.5em 0.5em 0.5em $gold);
   transition: 1s ease-in-out;
+  width: 25em;
+  height: auto;
+}
+
+#self-pic:hover {
+  box-shadow: 0px 0px 40px 0px #888888;
+  // text-shadow: (0px 0px 10px rgba(255, 255, 255, 0.75));
 }
 
 //EXPERIENCE/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -384,6 +465,9 @@ a:hover {
 
 .work-experience {
   margin-top: 2em;
+  // border-color: white;
+  // border-width: 5px;
+  height: 24em;
 }
 
 .list-group-item {
@@ -409,7 +493,8 @@ a:hover {
 }
 
 .job-dates {
-  font-size: 1.5em;
+  font-size: 1.2em;
+  font-family: "Source Code Pro";
 }
 
 .job-role {
@@ -481,6 +566,7 @@ a:hover {
 .card-code {
   font-family: "Source Code Pro";
   font-size: 0.8em;
+  padding-top: 2em;
 }
 
 hr {
@@ -627,127 +713,206 @@ hr {
 //MEDIA QUERIES/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MEDIA QUERIES/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-@media only screen and (min-width: 1800px) {
-  #hero {
-    padding: 0em 0em 16em 8em;
+
+// 992-1280.
+@media only screen and (max-width: 1280px) {
+  #triangles-parent {
+    margin-left: 35em;
   }
 
   #tejas {
-    margin-top: 30vh; //3.5em // 30vh
+    font-size: 6em;
   }
 
-  .center-arrow {
-    margin-top: -4em; // -5em
-    margin-right: -4em;
-  }
-
-  .center-arrow-2 {
-    margin-top: -35em; // -35em
-    margin-bottom: -34em; // -33em
-    margin-right: 3em;
-  }
-}
-
-@media only screen and (max-width: 1335px) {
-  .card-text {
-    height: 8em;
-  }
-}
-
-@media only screen and (max-width: 1272px) {
-  #tejas {
-    margin-top: 40vh; //calc(420px - 3vw)
-    font-size: 10vw;
-  }
   #wilkhoo {
-    font-size: 14vw;
+    font-size: 9em;
   }
-  #tagline {
-    font-size: 5vw;
+  
+  #tagline2 {
+    font-size: 3em;
   }
-  #current-quote {
-    font-size: 2vw;
+
+  .work-experience {
+    height: auto;
   }
-  .nav-link {
-    margin: 0em 0.6em 0em 0.6em;
+
+  #triangles-parent {
+    margin-left: 30em;
   }
+ 
 }
 
-@media only screen and (max-width: 1200px) {
-  .card-text {
-    height: 6em;
-  }
-}
 
+// 768-991.
 @media only screen and (max-width: 991px) {
-  .navbar {
-    padding: 0em 2em 0em 2em;
-    background-image: linear-gradient(180deg, #000000, #000000);
-  }
   section {
     margin: 0em 1em 0em 1em;
   }
-
-  .center-arrow {
-    border-bottom: #{$center-size * $triangle-ratio}px solid black;
+  .navbar {
+    background-image: linear-gradient(180deg, #000000, #00000000);
+    padding: 0em 2em 0em 2em;
   }
-  .center-arrow-2 {
-    border-bottom: #{$center-size-2 * $triangle-ratio}px solid black;
-  }
-
-  #tejas {
-    margin-top: 43vh; //calc(450px - 3vw)
-    margin-left: 0.3em;
-    font-size: Max(10vw, 3.4em);
-  }
-  #wilkhoo {
-    margin-left: 0.3em;
-    font-size: Max(12vw, 4em);
-  }
-  #tagline {
-    margin-left: 6vw;
-    font-size: Max(5vw, 2em);
-  }
-  #current-quote {
-    margin-left: 6vw;
-    font-size: Max(3vw, 1.3em);
-  }
-  .subtitle {
-    font-size: Max(6vw, 3em);
-  }
-  #self-pic {
-    width: 60%;
-    height: auto;
-  }
-
-  .card {
-    width: Min(30em, 100%);
-    height: auto;
-  }
-
-  .card-text {
-    height: auto;
-  }
-
-  #contact {
-    margin-bottom: 3em;
-  }
-
   #job-contents {
     margin-top: 2em;
   }
-
-  .job-title {
-    font-size: Max(5vw, 2em);
-  }
   .contact-icon {
+    font-size: 5em;
+  }
+
+  #triangles-parent {
+    margin-top: -4em;
+    margin-left: 20em;
+  }
+
+  #tejas {
     font-size: 4em;
+  }
+
+  #wilkhoo {
+    font-size: 7em;
+  }
+  
+  #tagline2 {
+    font-size: 2em;
+  }
+  
+  #tagline3 {
+    font-size: 1.3em;
+  }
+
+  .work-experience {
+    height: auto;
+  }
+
+  $center-size: 600;
+  $triangle-ratio: 0.86;
+  $inner-ratio: 0.98;
+  
+  .center-arrow {
+    // z-index: -10;
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: -13em;
+  
+    border-bottom: #{$center-size * $triangle-ratio}px solid $gold; //$gold
+    border-left: #{($center-size / 2)}px solid transparent;
+    border-right: #{($center-size / 2)}px solid transparent;
+    transform-origin: 50% 65%;
+  
+    animation: rotate-right 45s ease-in-out infinite; //360s
+  }
+  
+  .center-arrow-gold {
+    // z-index: -10;
+    position: relative;
+  
+    top: #{(($center-size * (1 - $inner-ratio) + 1)/ 2)}px;
+    left: #{$center-size * -1 * ($inner-ratio / 2)}px;
+  
+    border-bottom: #{$center-size * $triangle-ratio * $inner-ratio}px solid
+      rgb(0, 0, 0);
+    border-left: #{($center-size * $inner-ratio / 2)}px solid transparent;
+    border-right: #{($center-size * $inner-ratio / 2)}px solid transparent;
+  }
+
+  $center-size-2: 450;
+  $triangle-ratio: 0.86;
+  $inner-ratio: 0.98;
+  
+  .center-arrow-2 {
+    // z-index: -50;
+    // margin: auto;
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: -7em;
+    margin-left: 4.5em;
+  
+    border-bottom: #{$center-size-2 * $triangle-ratio}px solid white; // white
+    border-left: #{($center-size-2 / 2)}px solid transparent;
+    border-right: #{($center-size-2 / 2)}px solid transparent;
+    transform-origin: 50% 65%;
+  
+    animation: rotate-right-2 60s ease-in-out infinite; //540s
+  }
+  
+  .center-arrow-gold-2 {
+    // z-index: -50;
+    position: relative;
+  
+    top: #{(($center-size-2 * (1 - $inner-ratio) + 1)/ 2)}px;
+    left: #{$center-size-2 * -1 * ($inner-ratio / 2)}px;
+  
+    border-bottom: #{$center-size-2 * $triangle-ratio * $inner-ratio}px solid
+      rgb(0, 0, 0);
+    border-left: #{($center-size-2 * $inner-ratio / 2)}px solid transparent;
+    border-right: #{($center-size-2 * $inner-ratio / 2)}px solid transparent;
+  }
+  
+  @keyframes rotate-right-2 {
+    0% {
+      transform: rotate(35deg); //45deg  translateY(0px)
+    }
+  
+    50% {
+      transform: rotate(85deg); //405  translateY(0px)
+    }
+  
+    100% {
+      transform: rotate(35deg); //405  translateY(0px)
+    }
+  }
+
+  .subtitle {
+    font-size: 3em;
   }
 }
 
+// 577-767.
+@media only screen and (max-width: 767px) {
 
-@media (min-width: 1400px) {
-    .hero-container {
-        max-width: 1500px; 
-    }
+  #triangles-parent {
+    margin-left: 10em;
+  }
+
+  #tejas {
+    font-size: 3em;
+  }
+
+  #wilkhoo {
+    font-size: 6em;
+  }
+  
+  #tagline2 {
+    font-size: 1.5em;
+  }
+  
+  #tagline3 {
+    font-size: 1em;
+  }
+
+  .card-code {
+    padding-top: 3em;
+  }
+
+  #intro-parent {
+    padding-left: 1em;
+  }
+}
+
+// 0-576.
+@media only screen and (max-width: 576px) {
+  .contact-icon {
+    font-size: 3em;
+  }
+
+  #intro-parent {
+    padding-left: 4em;
+  }
+
+  #wilkhoo {
+    font-size: 4.5em;
+  }
+
 }
