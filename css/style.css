@@ -11,12 +11,15 @@
 }
 
 html {
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 body {
   max-width: 100%;
+  overflow-x: hidden;
   background-color: rgb(0, 0, 0);
   color: white !important;
   font-family: "Work Sans";
@@ -226,15 +229,10 @@ section {
     transform: rotate(35deg);
   }
 }
-#tagline1 {
-  font-family: "ragastaregular";
-  text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
-}
-
 #tejas {
   color: #000000;
   font-family: "ragastaitalic";
-  font-size: 8em;
+  font-size: 6em;
   text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
 }
 
@@ -262,7 +260,7 @@ section {
   color: transparent;
   font-family: "helonik";
   color: #d0a100;
-  font-size: 12em;
+  font-size: 10em;
   margin-top: -0.5em;
   margin-left: 0.5em;
   margin-bottom: -0.125em;
@@ -270,12 +268,13 @@ section {
 
 #tagline2 {
   font-family: "ragastaregular";
-  font-size: 4em;
+  font-size: 3em;
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
 }
 
 #tagline3 {
   text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+  font-size: 1.5em;
 }
 
 .subtitle {
@@ -584,14 +583,8 @@ hr {
   #triangles-parent {
     margin-left: 35em;
   }
-  #tejas {
-    font-size: 6em;
-  }
   #wilkhoo {
     font-size: 9em;
-  }
-  #tagline2 {
-    font-size: 3em;
   }
   .work-experience {
     height: auto;
@@ -605,7 +598,7 @@ hr {
     margin: 0em 1em 0em 1em;
   }
   .navbar {
-    background-image: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(180deg, #000000, #000000);
     padding: 0em 2em 0em 2em;
   }
   #job-contents {
@@ -632,6 +625,9 @@ hr {
   }
   .work-experience {
     height: auto;
+  }
+  #self-pic {
+    width: 20em;
   }
   .center-arrow {
     width: 0;
@@ -688,6 +684,9 @@ hr {
   }
 }
 @media only screen and (max-width: 767px) {
+  #self-pic {
+    width: 15em;
+  }
   #triangles-parent {
     margin-left: 10em;
   }
@@ -704,10 +703,49 @@ hr {
     font-size: 1em;
   }
   .card-code {
-    padding-top: 3em;
+    padding-top: 4em;
   }
   #intro-parent {
     padding-left: 1em;
+  }
+  .center-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: -11em;
+    border-bottom: 430px solid #d0a100;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    transform-origin: 50% 65%;
+    animation: rotate-right 45s ease-in-out infinite;
+  }
+  .center-arrow-gold {
+    position: relative;
+    top: 5.5px;
+    left: -245px;
+    border-bottom: 421.4px solid rgb(0, 0, 0);
+    border-left: 245px solid transparent;
+    border-right: 245px solid transparent;
+  }
+  .center-arrow-2 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: -7em;
+    margin-left: 3em;
+    border-bottom: 344px solid white;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    transform-origin: 50% 65%;
+    animation: rotate-right-2 60s ease-in-out infinite;
+  }
+  .center-arrow-gold-2 {
+    position: relative;
+    top: 4.5px;
+    left: -196px;
+    border-bottom: 337.12px solid rgb(0, 0, 0);
+    border-left: 196px solid transparent;
+    border-right: 196px solid transparent;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -715,9 +753,57 @@ hr {
     font-size: 3em;
   }
   #intro-parent {
-    padding-left: 4em;
+    padding-left: 2em;
   }
   #wilkhoo {
-    font-size: 4.5em;
+    font-size: 4em;
+  }
+  .center-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: -9em;
+    border-bottom: 344px solid #d0a100;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    transform-origin: 50% 65%;
+    animation: rotate-right 45s ease-in-out infinite;
+  }
+  .center-arrow-gold {
+    position: relative;
+    top: 4.5px;
+    left: -196px;
+    border-bottom: 337.12px solid rgb(0, 0, 0);
+    border-left: 196px solid transparent;
+    border-right: 196px solid transparent;
+  }
+  .center-arrow-2 {
+    width: 0;
+    height: 0;
+    position: absolute;
+    margin-top: -5em;
+    margin-left: 3em;
+    border-bottom: 258px solid white;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    transform-origin: 50% 65%;
+    animation: rotate-right-2 60s ease-in-out infinite;
+  }
+  .center-arrow-gold-2 {
+    position: relative;
+    top: 3.5px;
+    left: -147px;
+    border-bottom: 252.84px solid rgb(0, 0, 0);
+    border-left: 147px solid transparent;
+    border-right: 147px solid transparent;
+  }
+  .card-code {
+    padding-top: 6em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  li {
+    font-size: 0.9em;
   }
 }/*# sourceMappingURL=style.css.map */
