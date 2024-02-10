@@ -404,6 +404,10 @@ a:hover {
   font-family: "ragastaitalic";
 }
 
+.experience-tag {
+  color: #aaa;
+}
+
 .card {
   position: relative;
   box-sizing: border-box;
@@ -445,16 +449,17 @@ a:hover {
   color: #d0a100;
   font-size: 1.4em;
   font-weight: 900;
+  height: 2em;
 }
 
 .card-text {
-  height: 6em;
+  height: 10em;
 }
 
 .card-code {
   font-family: "Source Code Pro";
   font-size: 0.8em;
-  padding-top: 2em;
+  height: 4em;
 }
 
 hr {
@@ -473,6 +478,10 @@ hr {
 .card-icon:hover {
   top: -3px;
   color: #d0a100;
+}
+
+.card-bottom {
+  height: 10em;
 }
 
 .contact-icon {
@@ -532,12 +541,7 @@ hr {
 
 #flowers {
   text-decoration: none;
-  color: #d0a100;
-  transition: 1s ease-in-out;
-}
-
-#flowers:hover {
-  letter-spacing: 0.03em;
+  color: white;
 }
 
 .page-not-found {
@@ -702,9 +706,6 @@ hr {
   #tagline3 {
     font-size: 1em;
   }
-  .card-code {
-    padding-top: 4em;
-  }
   #intro-parent {
     padding-left: 1em;
   }
@@ -796,9 +797,6 @@ hr {
     border-bottom: 252.84px solid rgb(0, 0, 0);
     border-left: 147px solid transparent;
     border-right: 147px solid transparent;
-  }
-  .card-code {
-    padding-top: 6em;
   }
   p {
     font-size: 0.9em;

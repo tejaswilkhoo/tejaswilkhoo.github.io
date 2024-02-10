@@ -1,35 +1,43 @@
 //console.log("experience.js loaded");
 
+document.getElementById("step2").classList.add("active");
+
+const mainExp =
+`          
+<h3 class="job-title text-center">STEP Intern <span class="gold-text-job">@Google</span> </h3>
+<h4 class="job-dates text-center">May 2023 - Aug 2023, Sunnyvale CA</h4>
+<ul>
+  <li class="job-role">
+    <b>STEP: </b>Student Training in Engineering Program
+  </li>
+  <li class="job-role">
+    Launched a mechanism to programmatically identify URLs belonging to Google Compute Engine and enforce malicious VMs, yielding a 10x increase in malicious Compute Engine users suspended.
+  </li>
+  <li class="job-role">
+    Deployed Golang scripts on Google's anti-abuse platform to determine policy violations of abusive actors and to dynamically schedule takedowns based on individual user conditions.
+  </li>
+  <li class="job-role">
+    Wrote C++ services for DNS/IP lookups, and reprovisioned the existing lookup pipeline to undergo a 99.8% load decrease by redirecting traffic to a feature cache.
+  </li>
+</ul>
+`
+
+$("#job-explanation").html(mainExp);
+
+
+
 document.getElementById("step2").addEventListener("click", function () {
   if (!document.getElementById("step2").classList.contains("active")) {
     document.getElementById("step2").classList.add("active");
     document.getElementById("step1").classList.remove("active");
     document.getElementById("uwbp").classList.remove("active");
-    // document.getElementById("cssi").classList.remove("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
     $("#job-explanation")
       .fadeOut(function () {
         $(this).html(
-          `          
-          <h3 class="job-title text-center">STEP Intern <span class="gold-text-job">@Google</span> </h3>
-          <h4 class="job-dates text-center">May 2023 - Aug 2023, Sunnyvale CA</h4>
-          <ul>
-            <li class="job-role">
-              <b>STEP: </b>Student Training in Engineering Program
-            </li>
-            <li class="job-role">
-              Launched a mechanism to programmatically identify URLs belonging to Google Compute Engine and enforce malicious VMs, yielding a 10x increase in malicious Compute Engine users suspended.
-            </li>
-            <li class="job-role">
-              Deployed Golang scripts on Google's anti-abuse platform to determine policy violations of abusive actors and to dynamically schedule takedowns based on individual user conditions.
-            </li>
-            <li class="job-role">
-              Wrote C++ services for DNS/IP lookups, and reprovisioned the existing lookup pipeline to undergo a 99.8% load decrease by redirecting traffic to a feature cache.
-            </li>
-          </ul>
-      `
+          mainExp
         );
       })
       .fadeIn();
@@ -41,7 +49,6 @@ document.getElementById("step1").addEventListener("click", function () {
     document.getElementById("step2").classList.remove("active");
     document.getElementById("step1").classList.add("active");
     document.getElementById("uwbp").classList.remove("active");
-    // document.getElementById("cssi").classList.remove("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
@@ -77,7 +84,6 @@ document.getElementById("uwbp").addEventListener("click", function () {
     document.getElementById("step2").classList.remove("active");
     document.getElementById("step1").classList.remove("active");
     document.getElementById("uwbp").classList.add("active");
-    // document.getElementById("cssi").classList.remove("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
@@ -105,47 +111,11 @@ document.getElementById("uwbp").addEventListener("click", function () {
   }
 });
 
-// document.getElementById("cssi").addEventListener("click", function () {
-//   if (!document.getElementById("cssi").classList.contains("active")) {
-//     document.getElementById("step").classList.remove("active");
-//     document.getElementById("uwbp").classList.remove("active");
-//     document.getElementById("cssi").classList.add("active");
-//     document.getElementById("pdsb").classList.remove("active");
-//     document.getElementById("kraftwerx").classList.remove("active");
-
-//     $("#job-explanation")
-//       .fadeOut(function () {
-//         $(this).html(
-//           `          
-//       <h3 class="job-title text-center">Student <span class="gold-text-job">@Google CSSI</span> </h3>
-//       <h4 class="job-dates text-center">July 2021 - August 2021</h4>
-//       <ul>
-//         <li class="job-role">
-//           <b>CSSI: </b>Computer Science Summer Institute
-//         </li>
-//         <li class="job-role">
-//           Participated in a selective computer science program based on JavaScript and Firebase taught by Google engineers.
-//         </li>
-//         <li class="job-role">
-//           Explored and added external API functionality (i.e., Giphy API) and JSON data formatting to modern website design while collaborating with other students using Git and GitHub.
-//         </li>
-//         <li class="job-role">
-//           Integrated Firebase's Realtime Database and authentication services into 4 different web applications to automatically manage and sync large volumes of user data, through CRUD functions.
-//         </li>
-//       </ul>
-//     `
-//         );
-//       })
-//       .fadeIn();
-//   }
-// });
-
 document.getElementById("pdsb").addEventListener("click", function () {
   if (!document.getElementById("pdsb").classList.contains("active")) {
     document.getElementById("step2").classList.remove("active");
     document.getElementById("step1").classList.remove("active");
     document.getElementById("uwbp").classList.remove("active");
-    // document.getElementById("cssi").classList.remove("active");
     document.getElementById("pdsb").classList.add("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
@@ -178,7 +148,6 @@ document.getElementById("kraftwerx").addEventListener("click", function () {
     document.getElementById("step2").classList.remove("active");
     document.getElementById("step1").classList.remove("active");
     document.getElementById("uwbp").classList.remove("active");
-    // document.getElementById("cssi").classList.remove("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.add("active");
 

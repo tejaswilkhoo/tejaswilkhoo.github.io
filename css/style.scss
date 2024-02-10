@@ -296,7 +296,6 @@ $inner-ratio: 0.98;
   }
 }
 
-
 #wilkhoo {
   background-image: linear-gradient(90deg, #957200, $gold); //#977807
 
@@ -485,6 +484,10 @@ a:hover {
   font-family: "ragastaitalic";
 }
 
+.experience-tag {
+  color: #aaa;
+}
+
 //PROJECTS/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //PROJECTS/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //PROJECTS/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -536,16 +539,17 @@ a:hover {
   color: $gold;
   font-size: 1.4em;
   font-weight: 900;
+  height: 2em;
 }
 
 .card-text {
-  height: 6em;
+  height: 10em;
 }
 
 .card-code {
   font-family: "Source Code Pro";
   font-size: 0.8em;
-  padding-top: 2em;
+  height: 4em;
 }
 
 hr {
@@ -564,6 +568,10 @@ hr {
 .card-icon:hover {
   top: -3px;
   color: $gold;
+}
+
+.card-bottom {
+  height: 10em;
 }
 
 //CONTACT/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -633,12 +641,7 @@ hr {
 
 #flowers {
   text-decoration: none;
-  color: $gold;
-  transition: 1s ease-in-out;
-}
-
-#flowers:hover {
-  letter-spacing: 0.03em;
+  color: white;
 }
 
 //404/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -692,7 +695,6 @@ hr {
 //MEDIA QUERIES/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //MEDIA QUERIES/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 // 992-1280.
 @media only screen and (max-width: 1280px) {
   #triangles-parent {
@@ -702,7 +704,7 @@ hr {
   #wilkhoo {
     font-size: 9em;
   }
-  
+
   .work-experience {
     height: auto;
   }
@@ -711,7 +713,6 @@ hr {
     margin-left: 30em;
   }
 }
-
 
 // 768-991.
 @media only screen and (max-width: 991px) {
@@ -741,11 +742,11 @@ hr {
   #wilkhoo {
     font-size: 7em;
   }
-  
+
   #tagline2 {
     font-size: 2em;
   }
-  
+
   #tagline3 {
     font-size: 1.3em;
   }
@@ -761,29 +762,29 @@ hr {
   $center-size: 600;
   $triangle-ratio: 0.86;
   $inner-ratio: 0.98;
-  
+
   .center-arrow {
     // z-index: -10;
     width: 0;
     height: 0;
     position: absolute;
     margin-top: -13em;
-  
+
     border-bottom: #{$center-size * $triangle-ratio}px solid $gold; //$gold
     border-left: #{($center-size / 2)}px solid transparent;
     border-right: #{($center-size / 2)}px solid transparent;
     transform-origin: 50% 65%;
-  
+
     animation: rotate-right 45s ease-in-out infinite; //360s
   }
-  
+
   .center-arrow-gold {
     // z-index: -10;
     position: relative;
-  
+
     top: #{(($center-size * (1 - $inner-ratio) + 1)/ 2)}px;
     left: #{$center-size * -1 * ($inner-ratio / 2)}px;
-  
+
     border-bottom: #{$center-size * $triangle-ratio * $inner-ratio}px solid
       rgb(0, 0, 0);
     border-left: #{($center-size * $inner-ratio / 2)}px solid transparent;
@@ -793,7 +794,7 @@ hr {
   $center-size-2: 450;
   $triangle-ratio: 0.86;
   $inner-ratio: 0.98;
-  
+
   .center-arrow-2 {
     // z-index: -50;
     // margin: auto;
@@ -802,37 +803,37 @@ hr {
     position: absolute;
     margin-top: -7em;
     margin-left: 4.5em;
-  
+
     border-bottom: #{$center-size-2 * $triangle-ratio}px solid white; // white
     border-left: #{($center-size-2 / 2)}px solid transparent;
     border-right: #{($center-size-2 / 2)}px solid transparent;
     transform-origin: 50% 65%;
-  
+
     animation: rotate-right-2 60s ease-in-out infinite; //540s
   }
-  
+
   .center-arrow-gold-2 {
     // z-index: -50;
     position: relative;
-  
+
     top: #{(($center-size-2 * (1 - $inner-ratio) + 1)/ 2)}px;
     left: #{$center-size-2 * -1 * ($inner-ratio / 2)}px;
-  
+
     border-bottom: #{$center-size-2 * $triangle-ratio * $inner-ratio}px solid
       rgb(0, 0, 0);
     border-left: #{($center-size-2 * $inner-ratio / 2)}px solid transparent;
     border-right: #{($center-size-2 * $inner-ratio / 2)}px solid transparent;
   }
-  
+
   @keyframes rotate-right-2 {
     0% {
       transform: rotate(35deg); //45deg  translateY(0px)
     }
-  
+
     50% {
       transform: rotate(85deg); //405  translateY(0px)
     }
-  
+
     100% {
       transform: rotate(35deg); //405  translateY(0px)
     }
@@ -845,7 +846,6 @@ hr {
 
 // 577-767.
 @media only screen and (max-width: 767px) {
-
   #self-pic {
     width: 15em;
   }
@@ -861,17 +861,13 @@ hr {
   #wilkhoo {
     font-size: 6em;
   }
-  
+
   #tagline2 {
     font-size: 1.5em;
   }
-  
+
   #tagline3 {
     font-size: 1em;
-  }
-
-  .card-code {
-    padding-top: 4em;
   }
 
   #intro-parent {
@@ -881,29 +877,29 @@ hr {
   $center-size: 500;
   $triangle-ratio: 0.86;
   $inner-ratio: 0.98;
-  
+
   .center-arrow {
     // z-index: -10;
     width: 0;
     height: 0;
     position: absolute;
     margin-top: -11em;
-  
+
     border-bottom: #{$center-size * $triangle-ratio}px solid $gold; //$gold
     border-left: #{($center-size / 2)}px solid transparent;
     border-right: #{($center-size / 2)}px solid transparent;
     transform-origin: 50% 65%;
-  
+
     animation: rotate-right 45s ease-in-out infinite; //360s
   }
-  
+
   .center-arrow-gold {
     // z-index: -10;
     position: relative;
-  
+
     top: #{(($center-size * (1 - $inner-ratio) + 1)/ 2)}px;
     left: #{$center-size * -1 * ($inner-ratio / 2)}px;
-  
+
     border-bottom: #{$center-size * $triangle-ratio * $inner-ratio}px solid
       rgb(0, 0, 0);
     border-left: #{($center-size * $inner-ratio / 2)}px solid transparent;
@@ -913,7 +909,7 @@ hr {
   $center-size-2: 400;
   $triangle-ratio: 0.86;
   $inner-ratio: 0.98;
-  
+
   .center-arrow-2 {
     // z-index: -50;
     // margin: auto;
@@ -922,22 +918,22 @@ hr {
     position: absolute;
     margin-top: -7em;
     margin-left: 3em;
-  
+
     border-bottom: #{$center-size-2 * $triangle-ratio}px solid white; // white
     border-left: #{($center-size-2 / 2)}px solid transparent;
     border-right: #{($center-size-2 / 2)}px solid transparent;
     transform-origin: 50% 65%;
-  
+
     animation: rotate-right-2 60s ease-in-out infinite; //540s
   }
-  
+
   .center-arrow-gold-2 {
     // z-index: -50;
     position: relative;
-  
+
     top: #{(($center-size-2 * (1 - $inner-ratio) + 1)/ 2)}px;
     left: #{$center-size-2 * -1 * ($inner-ratio / 2)}px;
-  
+
     border-bottom: #{$center-size-2 * $triangle-ratio * $inner-ratio}px solid
       rgb(0, 0, 0);
     border-left: #{($center-size-2 * $inner-ratio / 2)}px solid transparent;
@@ -962,29 +958,29 @@ hr {
   $center-size: 400;
   $triangle-ratio: 0.86;
   $inner-ratio: 0.98;
-  
+
   .center-arrow {
     // z-index: -10;
     width: 0;
     height: 0;
     position: absolute;
     margin-top: -9em;
-  
+
     border-bottom: #{$center-size * $triangle-ratio}px solid $gold; //$gold
     border-left: #{($center-size / 2)}px solid transparent;
     border-right: #{($center-size / 2)}px solid transparent;
     transform-origin: 50% 65%;
-  
+
     animation: rotate-right 45s ease-in-out infinite; //360s
   }
-  
+
   .center-arrow-gold {
     // z-index: -10;
     position: relative;
-  
+
     top: #{(($center-size * (1 - $inner-ratio) + 1)/ 2)}px;
     left: #{$center-size * -1 * ($inner-ratio / 2)}px;
-  
+
     border-bottom: #{$center-size * $triangle-ratio * $inner-ratio}px solid
       rgb(0, 0, 0);
     border-left: #{($center-size * $inner-ratio / 2)}px solid transparent;
@@ -994,7 +990,7 @@ hr {
   $center-size-2: 300;
   $triangle-ratio: 0.86;
   $inner-ratio: 0.98;
-  
+
   .center-arrow-2 {
     // z-index: -50;
     // margin: auto;
@@ -1003,30 +999,26 @@ hr {
     position: absolute;
     margin-top: -5em;
     margin-left: 3em;
-  
+
     border-bottom: #{$center-size-2 * $triangle-ratio}px solid white; // white
     border-left: #{($center-size-2 / 2)}px solid transparent;
     border-right: #{($center-size-2 / 2)}px solid transparent;
     transform-origin: 50% 65%;
-  
+
     animation: rotate-right-2 60s ease-in-out infinite; //540s
   }
-  
+
   .center-arrow-gold-2 {
     // z-index: -50;
     position: relative;
-  
+
     top: #{(($center-size-2 * (1 - $inner-ratio) + 1)/ 2)}px;
     left: #{$center-size-2 * -1 * ($inner-ratio / 2)}px;
-  
+
     border-bottom: #{$center-size-2 * $triangle-ratio * $inner-ratio}px solid
       rgb(0, 0, 0);
     border-left: #{($center-size-2 * $inner-ratio / 2)}px solid transparent;
     border-right: #{($center-size-2 * $inner-ratio / 2)}px solid transparent;
-  }
-
-  .card-code {
-    padding-top: 6em;
   }
 
   p {
