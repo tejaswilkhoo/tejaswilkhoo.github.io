@@ -7,8 +7,7 @@ const mainExp = `
 <h4 class="job-dates text-center">May 2024 - Aug 2024, New York NY</h4>
 <ul>
   <li class="job-role">
-  Joining the Time team responsible for Google’s distributed time servers, and will be creating infrastructure in Golang and C++ to automatically
-  assess communication delay, reducing SWE hours spent resolving issues and improving accuracy.
+  Joining the Time team responsible for Google's distributed time servers, and will be creating infrastructure in Golang and C++ to automatically assess communication delay, reducing SWE hours spent resolving issues and improving accuracy.
   </li>
 </ul>
 `;
