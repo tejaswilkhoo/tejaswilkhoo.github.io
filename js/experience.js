@@ -2,42 +2,70 @@
 
 document.getElementById("step2").classList.add("active");
 
-const mainExp =
-`          
-<h3 class="job-title text-center">STEP Intern <span class="gold-text-job">@Google</span> </h3>
-<h4 class="job-dates text-center">May 2023 - Aug 2023, Sunnyvale CA</h4>
+const mainExp = `          
+<h3 class="job-title text-center">SWE Intern <span class="gold-text-job">@Google</span> </h3>
+<h4 class="job-dates text-center">May 2024 - Aug 2024, New York NY</h4>
 <ul>
   <li class="job-role">
-    <b>STEP: </b>Student Training in Engineering Program
-  </li>
-  <li class="job-role">
-    Launched a mechanism to programmatically identify URLs belonging to Google Compute Engine and enforce malicious VMs, yielding a 10x increase in malicious Compute Engine users suspended.
-  </li>
-  <li class="job-role">
-    Deployed Golang scripts on Google's anti-abuse platform to determine policy violations of abusive actors and to dynamically schedule takedowns based on individual user conditions.
-  </li>
-  <li class="job-role">
-    Wrote C++ services for DNS/IP lookups, and reprovisioned the existing lookup pipeline to undergo a 99.8% load decrease by redirecting traffic to a feature cache.
+  Joining the Time team responsible for Google’s distributed time servers, and will be creating infrastructure in Golang and C++ to automatically
+  assess communication delay, reducing SWE hours spent resolving issues and improving accuracy.
   </li>
 </ul>
-`
+`;
 
 $("#job-explanation").html(mainExp);
 
+document.getElementById("google").addEventListener("click", function () {
+  if (!document.getElementById("google").classList.contains("active")) {
+    document.getElementById("google").classList.add("active");
+    document.getElementById("step2").classList.remove("active");
+    document.getElementById("step1").classList.remove("active");
+    document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("uwarg").classList.remove("active");
+    document.getElementById("orbital").classList.remove("active");
+    document.getElementById("pdsb").classList.remove("active");
+    document.getElementById("kraftwerx").classList.remove("active");
 
+    $("#job-explanation")
+      .fadeOut(function () {
+        $(this).html(mainExp);
+      })
+      .fadeIn();
+  }
+});
 
 document.getElementById("step2").addEventListener("click", function () {
   if (!document.getElementById("step2").classList.contains("active")) {
+    document.getElementById("google").classList.remove("active");
     document.getElementById("step2").classList.add("active");
     document.getElementById("step1").classList.remove("active");
     document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("uwarg").classList.remove("active");
+    document.getElementById("orbital").classList.remove("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
     $("#job-explanation")
       .fadeOut(function () {
         $(this).html(
-          mainExp
+          `          
+          <h3 class="job-title text-center">STEP Intern <span class="gold-text-job">@Google</span> </h3>
+          <h4 class="job-dates text-center">May 2023 - Aug 2023, Sunnyvale CA</h4>
+          <ul>
+            <li class="job-role">
+              <b>STEP: </b>Student Training in Engineering Program
+            </li>
+            <li class="job-role">
+              Launched a mechanism to programmatically identify URLs belonging to Google Compute Engine and enforce malicious VMs, yielding a 10x increase in malicious Compute Engine users suspended.
+            </li>
+            <li class="job-role">
+              Deployed Golang scripts on Google's anti-abuse platform to determine policy violations of abusive actors and to dynamically schedule takedowns based on individual user conditions.
+            </li>
+            <li class="job-role">
+              Wrote C++ services for DNS/IP lookups, and reprovisioned the existing lookup pipeline to undergo a 99.8% load decrease by redirecting traffic to a feature cache.
+            </li>
+          </ul>
+          `
         );
       })
       .fadeIn();
@@ -46,9 +74,12 @@ document.getElementById("step2").addEventListener("click", function () {
 
 document.getElementById("step1").addEventListener("click", function () {
   if (!document.getElementById("step1").classList.contains("active")) {
+    document.getElementById("google").classList.remove("active");
     document.getElementById("step2").classList.remove("active");
     document.getElementById("step1").classList.add("active");
     document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("uwarg").classList.remove("active");
+    document.getElementById("orbital").classList.remove("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
@@ -72,7 +103,7 @@ document.getElementById("step1").addEventListener("click", function () {
               Implemented a custom Go server using Pub/Sub queues, gRPC, and Protobufs to communicate with other Google services, minimizing latency to 3700ms (75% decrease from previous) per execution.
             </li>
           </ul>
-      `
+          `
         );
       })
       .fadeIn();
@@ -81,9 +112,12 @@ document.getElementById("step1").addEventListener("click", function () {
 
 document.getElementById("uwbp").addEventListener("click", function () {
   if (!document.getElementById("uwbp").classList.contains("active")) {
+    document.getElementById("google").classList.remove("active");
     document.getElementById("step2").classList.remove("active");
     document.getElementById("step1").classList.remove("active");
     document.getElementById("uwbp").classList.add("active");
+    document.getElementById("uwarg").classList.remove("active");
+    document.getElementById("orbital").classList.remove("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
@@ -111,11 +145,79 @@ document.getElementById("uwbp").addEventListener("click", function () {
   }
 });
 
-document.getElementById("pdsb").addEventListener("click", function () {
-  if (!document.getElementById("pdsb").classList.contains("active")) {
+document.getElementById("uwarg").addEventListener("click", function () {
+  if (!document.getElementById("uwarg").classList.contains("active")) {
+    document.getElementById("google").classList.remove("active");
     document.getElementById("step2").classList.remove("active");
     document.getElementById("step1").classList.remove("active");
     document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("uwarg").classList.add("active");
+    document.getElementById("orbital").classList.remove("active");
+    document.getElementById("pdsb").classList.remove("active");
+    document.getElementById("kraftwerx").classList.remove("active");
+
+    $("#job-explanation")
+      .fadeOut(function () {
+        $(this).html(
+          `          
+          <h3 class="job-title text-center">Systems Developer <span class="gold-text-job">@UWARG</span> </h3>
+          <h4 class="job-dates text-center">Nov 2023 - Present, Waterloo ON</h4>
+          <ul>
+            <li class="job-role">
+              <b>University of Waterloo Aerial Robotics Group: </b> A club to create autonomous aircrafts.
+            </li>
+            <li class="job-role">
+            Developing an Attitude and Heading Reference System in C for STM32-powered autonomous aircrafts, researching different filters (Kalman, Madgwick) to increase attitude accuracy.
+            </li>
+          </ul>
+        `
+        );
+      })
+      .fadeIn();
+  }
+});
+
+document.getElementById("orbital").addEventListener("click", function () {
+  if (!document.getElementById("orbital").classList.contains("active")) {
+    document.getElementById("google").classList.remove("active");
+    document.getElementById("step2").classList.remove("active");
+    document.getElementById("step1").classList.remove("active");
+    document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("uwarg").classList.remove("active");
+    document.getElementById("orbital").classList.add("active");
+    document.getElementById("pdsb").classList.remove("active");
+    document.getElementById("kraftwerx").classList.remove("active");
+
+    $("#job-explanation")
+      .fadeOut(function () {
+        $(this).html(
+          `          
+          <h3 class="job-title text-center">Firmware Developer <span class="gold-text-job">@UW Orbital</span> </h3>
+          <h4 class="job-dates text-center">Jan 2024 - Present, Waterloo ON</h4>
+          <ul>
+            <li class="job-role">
+              <b>University of Waterloo Aerial Robotics Group: </b> A club to create CubeSats (miniature satellites), competing in the Canadian Satellite Design Challenge (CDSC).
+            </li>
+            <li class="job-role">
+            Creating drivers to interface with a CC1120 temperature sensor using SPI communication (C++), and improved existing drivers for a VN100 IMU's communication with a STM32 MCU on a CubeSat.
+
+            </li>
+          </ul>
+        `
+        );
+      })
+      .fadeIn();
+  }
+});
+
+document.getElementById("pdsb").addEventListener("click", function () {
+  if (!document.getElementById("pdsb").classList.contains("active")) {
+    document.getElementById("google").classList.remove("active");
+    document.getElementById("step2").classList.remove("active");
+    document.getElementById("step1").classList.remove("active");
+    document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("uwarg").classList.remove("active");
+    document.getElementById("orbital").classList.remove("active");
     document.getElementById("pdsb").classList.add("active");
     document.getElementById("kraftwerx").classList.remove("active");
 
@@ -145,9 +247,12 @@ document.getElementById("pdsb").addEventListener("click", function () {
 
 document.getElementById("kraftwerx").addEventListener("click", function () {
   if (!document.getElementById("kraftwerx").classList.contains("active")) {
+    document.getElementById("google").classList.remove("active");
     document.getElementById("step2").classList.remove("active");
     document.getElementById("step1").classList.remove("active");
     document.getElementById("uwbp").classList.remove("active");
+    document.getElementById("uwarg").classList.remove("active");
+    document.getElementById("orbital").classList.remove("active");
     document.getElementById("pdsb").classList.remove("active");
     document.getElementById("kraftwerx").classList.add("active");
 
