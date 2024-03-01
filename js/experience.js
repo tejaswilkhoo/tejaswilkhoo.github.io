@@ -1,6 +1,6 @@
 //console.log("experience.js loaded");
 
-document.getElementById("step2").classList.add("active");
+document.getElementById("google").classList.add("active");
 
 const mainExp = `          
 <h3 class="job-title text-center">SWE Intern <span class="gold-text-job">@Google</span> </h3>
