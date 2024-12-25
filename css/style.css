@@ -364,8 +364,7 @@ a:hover {
 }
 
 .work-experience {
-  margin-top: 2em;
-  height: 24em;
+  height: auto;
 }
 
 .list-group-item {
